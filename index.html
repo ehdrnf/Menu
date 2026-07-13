@@ -668,7 +668,7 @@
                                 <span class="dots-leader"></span>
                                 <span class="text-[#4a3428] font-bold">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- Sherry sweetness meeting intense, heavy peat smoke" data-kor="- 셰리의 눅진한 단맛과 화산재 같은 화끈한 훈연향의 영리한 조화">- 셰리의 눅진한 단맛과 화산재 같은 화끈한 훈연향의 영리한 조화</p>
+                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- Sherry sweetness meeting intense, heavy peat smoke" data-kor="- 셰리의 눅진한 단맛และ 화산재 같은 화끈한 훈연향의 영리한 조화">- 셰리의 눅진한 단맛과 화산재 같은 화끈한 훈연향의 영리한 조화</p>
                         </div>
                         <!-- Ardbeg Corry -->
                         <div class="menu-item flex flex-col pb-1">
@@ -846,7 +846,7 @@
                         <!-- Weller 12 -->
                         <div class="menu-item flex flex-col pb-1">
                             <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Weller 12 YO (45%)(30ml)" data-kor="웰러 12년 (45%)(30ml)">웰러 12년 (45%)(30ml)</span>
+                                <span data-eng="Weller 12 YO (45%)" data-kor="웰러 12년 (45%)">웰러 12년 (45%)</span>
                                 <span class="dots-leader"></span>
                                 <span class="text-[#4a3428] font-bold">3.5</span>
                             </div>
@@ -1112,7 +1112,7 @@
 
     <script>
         let currentPage = 1;
-        const totalPages = 9; // Increased from 8 to 9 for the Platter page
+        const totalPages = 9; // 9 Pages (Whisky + Platter + Cocktail added)
         let currentLang = 'ko';
 
         // Horizontal sliding & center aligned tab focus
@@ -1166,28 +1166,28 @@
         function updateTranslation() {
             const attrSuffix = currentLang === 'ko' ? 'kor' : 'eng';
 
-            // 1. Translate Tab labels
-            for (let i = 1; i <= totalPages; i++) {
-                const tab = document.getElementById(`tab${i}`);
-                if (tab) {
-                    tab.textContent = tab.getAttribute(`data-${attrSuffix}`);
-                }
-            }
-
-            // 2. Translate Static titles & structures
-            const translatables = [
-                'guide-title', 'guide-desc', 'title-flight', 'flight-info', 'title-speyside', 'title-highland', 'title-islay', 'title-world', 'title-bourbon', 'title-cocktail-1', 'title-cocktail-2', 'cocktail-info',
-                'label-highlands', 'label-islands', 'label-taiwan', 'label-korean', 'label-blended', 'label-bourbon', 'label-tequila', 'label-cognac', 'label-signature', 'label-classic-1', 'label-classic-2', 'label-glass-wine', 'label-fun', 'label-shooter', 'label-non-alcohol', 'label-food', 'label-beer',
-                'label-combo-harmony', 'label-bourbon-flights', 'label-peat-flights', 'label-sherry-flights'
-            ];
-            translatables.forEach(id => {
-                const el = document.getElementById(id);
-                if (el) {
-                    el.innerHTML = el.getAttribute(`data-${attrSuffix}`);
+            // Universal dynamic translator for all elements with data-eng and data-kor
+            document.querySelectorAll('[data-eng][data-kor]').forEach(el => {
+                const translation = el.getAttribute(`data-${attrSuffix}`);
+                if (translation !== null) {
+                    if (el.tagName === 'P' || el.id === 'guide-desc' || el.id === 'flight-info') {
+                        el.innerHTML = translation;
+                    } else {
+                        el.textContent = translation;
+                    }
                 }
             });
+        }
 
-            // 3. Translate individual whiskey & cocktail titles / descriptions
+        // Add swipe gesture support on the main card container
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const cardContainer = document.getElementById('capture-zone');
+
+        cardContainer.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
         cardContainer.addEventListener('touchend', function(e) {
             touchEndX = e.changedTouches[0].screenX;
             handleSwipeGesture();
@@ -1217,7 +1217,7 @@
             if (span) {
                 // 적합한 검색어 픽업 (검색 정확도를 높이기 위해 도수 정보 '(XX%)'를 잘라냄)
                 let rawQuery = currentLang === 'ko' ? span.getAttribute('data-kor') : span.getAttribute('data-eng');
-                let query = rawQuery ? rawQuery.replace(/\s*\(\d+(\.\d+)?%\)/, '').trim() : '';
+                let query = rawQuery ? rawQuery.replace(/\s*\(\d+(\.\d+)?%\)/g, '').trim() : '';
                 if (query) {
                     // 데일리샷 모바일 주류 검색 엔진 호출
                     window.open(`https://dailyshot.co/m/search/result?q=${encodeURIComponent(query)}`, '_blank');
