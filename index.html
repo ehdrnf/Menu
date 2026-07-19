@@ -37,12 +37,12 @@
         #pages-wrapper {
             display: flex;
             height: 100%;
-            width: 900%; /* 9 Pages (Whisky + Platter + Cocktail added) */
+            width: 1000%; /* 10 Pages (Whisky + Platter + Wine + Cocktail added) */
             transition: transform 0.45s cubic-bezier(0.25, 1, 0.5, 1);
             will-change: transform;
         }
         .page-slide {
-            width: 11.1111%; /* 100% / 9 Pages */
+            width: 10%; /* 100% / 10 Pages */
             height: 100%;
             flex-shrink: 0;
             display: flex;
@@ -90,15 +90,17 @@
             color: #b89047 !important;
         }
 
-        /* 칵테일 및 테이스팅 플래터는 호버 효과 및 포인터 지우기 (텍스트 고정) */
+        /* 칵테일, 테이스팅 플래터 및 와인은 호버 효과 및 포인터 지우기 (텍스트 고정) */
         #cocktail-list-1 .menu-item span[data-eng],
         #cocktail-list-2 .menu-item span[data-eng],
-        #flight-list .menu-item span[data-eng] {
+        #flight-list .menu-item span[data-eng],
+        #wine-list .menu-item span[data-eng] {
             cursor: default;
         }
         #cocktail-list-1 .menu-item span[data-eng]:hover,
         #cocktail-list-2 .menu-item span[data-eng]:hover,
-        #flight-list .menu-item span[data-eng]:hover {
+        #flight-list .menu-item span[data-eng]:hover,
+        #wine-list .menu-item span[data-eng]:hover {
             text-decoration: none;
             color: inherit !important;
         }
@@ -132,8 +134,9 @@
         <button onclick="switchPage(5)" id="tab5" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Islay (Peat)" data-kor="아일레이 (피트)">아일레이 (피트)</button>
         <button onclick="switchPage(6)" id="tab6" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="World & Blended" data-kor="월드 & 블렌디드">월드 & 블렌디드</button>
         <button onclick="switchPage(7)" id="tab7" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Bourbon & Etc" data-kor="버번 & 기타">버번 & 기타</button>
-        <button onclick="switchPage(8)" id="tab8" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Cocktail (1)" data-kor="칵테일 (1)">칵테일 (1)</button>
-        <button onclick="switchPage(9)" id="tab9" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Cocktail (2)" data-kor="칵테일 (2)">칵테일 (2)</button>
+        <button onclick="switchPage(8)" id="tab8" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Wine" data-kor="와인">와인</button>
+        <button onclick="switchPage(9)" id="tab9" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Cocktail (1)" data-kor="칵테일 (1)">칵테일 (1)</button>
+        <button onclick="switchPage(10)" id="tab10" class="flex-shrink-0 px-4 py-2 text-xs font-medium rounded-full transition-all duration-200 text-[#7b8c9e]" data-eng="Cocktail (2)" data-kor="칵테일 (2)">칵테일 (2)</button>
     </div>
 
     <!-- Main Mobile Frame Container (High-End Tactile Cotton Paper Style) -->
@@ -939,7 +942,7 @@
                                 <span class="dots-leader"></span>
                                 <span class="text-[#4a3428] font-bold">1.2</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- The textbook caramel and vanilla, the gold standard of bourbon" data-kor="- 캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서">- 캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서</p>
+                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- The textbook caramel and vanilla, the gold standard of bourbon" data-kor="- 캐러মেল과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서">- 캐러মেল과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서</p>
                         </div>
                         <!-- Wild Turkey 101 -->
                         <div class="menu-item flex flex-col pb-1">
@@ -1029,7 +1032,7 @@
                         <!-- Hennessy VSOP -->
                         <div class="menu-item flex flex-col pb-1">
                             <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Hennessy VSOP (40%)" data-kor="헤네시 V.S.O.P (40%)">Hennessy VSOP (40%)</span>
+                                <span data-eng="Hennessy VSOP (40%)" data-kor="헤네시 V.S.O.P (40%)">헤네시 V.S.O.P (40%)</span>
                                 <span class="dots-leader"></span>
                                 <span class="text-[#4a3428] font-bold">1.6</span>
                             </div>
@@ -1067,7 +1070,49 @@
                     </div>
                 </div>
 
-                <!-- ================= PAGE 8: COCKTAIL (1) ================= -->
+                <!-- ================= PAGE 8: WINE ================= -->
+                <div class="page-slide">
+                    <div class="flex flex-col flex-1 min-h-0">
+                        <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-wine" data-eng="Wine Selection" data-kor="와인 셀렉션">와인 셀렉션</h3>
+                        
+                        <div class="space-y-4 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="wine-list">
+                            <!-- Glass Wine -->
+                            <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-1 mb-1 border-b border-[#b89047]/10 pb-0.5" id="label-glass-wine" data-eng="[ GLASS WINE ]" data-kor="[ 글라스 와인 ]">[ 글라스 와인 ]</div>
+                            
+                            <div class="menu-item flex flex-col pb-1">
+                                <div class="flex items-end justify-between text-[11px] w-full">
+                                    <span data-eng="Sauvignon Blanc / Dry Riesling (Glass)" data-kor="소비뇽블랑 / 드라이 리슬링 (글라스)">소비뇽블랑 / 드라이 리슬링 (글라스)</span>
+                                    <span class="dots-leader"></span>
+                                    <span class="text-[#4a3428] font-bold">1.0</span>
+                                </div>
+                                <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- Crisp, refreshing white wine by the glass" data-kor="- 산뜻하고 청량한 시트러스 풍미의 화이트 글라스 와인">- 산뜻하고 청량한 시트러스 풍미의 화이트 글라스 와인</p>
+                            </div>
+                            
+                            <div class="menu-item flex flex-col pb-1">
+                                <div class="flex items-end justify-between text-[11px] w-full">
+                                    <span data-eng="Fortified Wine (Glass)" data-kor="주정강화 와인 (글라스)">주정강화 와인 (글라스)</span>
+                                    <span class="dots-leader"></span>
+                                    <span class="text-[#4a3428] font-bold">1.2</span>
+                                </div>
+                                <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- Rich Port or Sherry with deep sweet complexity" data-kor="- 묵직하고 찐득한 과일 단맛과 높은 도수감의 포트/셰리 주정강화 와인">- 묵직하고 찐득한 과일 단맛과 높은 도수감의 포트/셰리 주정강화 와인</p>
+                            </div>
+
+                            <!-- Bottle Wine -->
+                            <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1 border-b border-[#b89047]/10 pb-0.5" id="label-bottle-wine" data-eng="[ BOTTLE WINE ]" data-kor="[ 바틀 와인 ]">[ 바틀 와인 ]</div>
+                            
+                            <div class="menu-item flex flex-col pb-1">
+                                <div class="flex items-end justify-between text-[11px] w-full">
+                                    <span data-eng="Moët & Chandon Impérial Brut" data-kor="모엣 샹동 임페리얼 브뤼">모엣 샹동 임페리얼 브뤼</span>
+                                    <span class="dots-leader"></span>
+                                    <span class="text-[#4a3428] font-bold">12.0</span>
+                                </div>
+                                <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- Iconic French Champagne with bright fruitiness and elegant bubbles" data-kor="- 화사한 과일 향과 섬세하고 미세한 탄산감이 빛나는 정통 프랑스 샴페인">- 화사한 과일 향과 섬세하고 미세한 탄산감이 빛나는 정통 프랑스 샴페인</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================= PAGE 9: COCKTAIL (1) ================= -->
                 <div class="page-slide">
                     <div class="flex flex-col flex-1 min-h-0">
                         <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-1 uppercase flex-shrink-0" id="title-cocktail-1" data-eng="Cocktail - Signatures & Classics (1)" data-kor="칵테일 - 시그니처 & 클래식 (1)">칵테일 - 시그니처 & 클래식 (1)</h3>
@@ -1119,7 +1164,7 @@
                     </div>
                 </div>
 
-                <!-- ================= PAGE 9: COCKTAIL (2) ================= -->
+                <!-- ================= PAGE 10: COCKTAIL (2) ================= -->
                 <div class="page-slide">
                     <div class="flex flex-col flex-1 min-h-0">
                         <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-cocktail-2" data-eng="Cocktails - Classics (2) & Others" data-kor="칵테일 - 클래식 (2) & 기타">칵테일 - 클래식 (2) & 기타</h3>
@@ -1154,15 +1199,6 @@
                             <div class="flex items-end justify-between text-[11px] menu-item"><span data-eng="Malibu Orange" data-kor="말리부 오렌지">말리부 오렌지</span><span class="dots-leader"></span><span class="text-[#4a3428] font-bold">1.4</span></div>
                             <div class="flex items-end justify-between text-[11px] menu-item"><span data-eng="Malibu Milk" data-kor="말리부 밀크">말리부 밀크</span><span class="dots-leader"></span><span class="text-[#4a3428] font-bold">1.4</span></div>
 
-                            <!-- Glass Wine -->
-                            <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-glass-wine" data-eng="[ GLASS WINE ]" data-kor="[ 글라스 와인 ]">[ 글라스 와인 ]</div>
-                            <div class="flex items-end justify-between text-[11px] menu-item"><span data-eng="Sauvignon blanc, Dry Riesling " data-kor="소비뇽블랑, 드라이 리슬링">소비뇽블랑, 드라이 리슬링</span><span class="dots-leader"></span><span class="text-[#4a3428] font-bold">1.0</span></div>
-                            <div class="flex items-end justify-between text-[11px] menu-item"><span data-eng="Fortified" data-kor="주정강화">주정강화</span><span class="dots-leader"></span><span class="text-[#4a3428] font-bold">1.2</span></div>
-
-                            <!-- Bottle Wine -->
-                            <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-glass-wine" data-eng="[ Bottle WINE ]" data-kor="[ 바틀 와인 ]">[ 바틀 와인 ]</div>
-                            <div class="flex items-end justify-between text-[11px] menu-item"><span data-eng="Moet & Chandon Imperial" data-kor="모엣 샹동 임페리얼">모엣 샹동 임페리얼</span><span class="dots-leader"></span><span class="text-[#4a3428] font-bold">12.0</span></div>
-                            
                             <!-- Fun -->
                             <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-fun" data-eng="[ FUN ]" data-kor="[ 펀 ]">[ 펀 ]</div>
                             <div class="flex items-end justify-between text-[11px] menu-item"><span data-eng="Faust from the HELL" data-kor="지옥에서 온 파우스트">지옥에서 온 파우스트</span><span class="dots-leader"></span><span class="text-[#4a3428] font-bold">1.7</span></div>
@@ -1183,7 +1219,7 @@
 
                             <!-- Outside food welcome -->
                             <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-food" data-eng="[ OUTSIDE FOOD WELCOME ]" data-kor="[ 외부 음식 반입 환영 ]">[ 외부 음식 반입 환영 ]</div>
-                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -1198,15 +1234,15 @@
 
     <script>
         let currentPage = 1;
-        const totalPages = 9; // 9 Pages (Whisky + Platter + Cocktail added)
+        const totalPages = 10; // Exactly 10 slides
         let currentLang = 'ko';
 
         // Horizontal sliding & center aligned tab focus
         function switchPage(pageNum) {
             currentPage = pageNum;
             const wrapper = document.getElementById('pages-wrapper');
-            // Calculate percentage based on 9 pages total
-            const percentTranslate = -(pageNum - 1) * 11.1111; 
+            // Calculate percentage based on 10 pages total
+            const percentTranslate = -(pageNum - 1) * 10; 
             wrapper.style.transform = `translateX(${percentTranslate}%)`;
             
             // Toggle active styles on tab buttons
@@ -1291,10 +1327,10 @@
             }
         }
 
-        // 데일리샷 탐색 및 리다이렉트 처리 글로벌 리스너 (칵테일 및 플라이트 컨테이너는 제외)
+        // 데일리샷 탐색 및 리다이렉트 처리 글로벌 리스너 (칵테일, 플라이트 및 와인 컨테이너는 제외)
         document.getElementById('capture-zone').addEventListener('click', function(e) {
-            // 칵테일 및 플래터 영역 클릭 시 데일리샷 연동을 막고 그냥 정적 텍스트로 보존
-            if (e.target.closest('#cocktail-list-1') || e.target.closest('#cocktail-list-2') || e.target.closest('#flight-list')) {
+            // 칵테일, 플래터 및 와인 영역 클릭 시 데일리샷 연동을 막고 그냥 정적 텍스트로 보존
+            if (e.target.closest('#cocktail-list-1') || e.target.closest('#cocktail-list-2') || e.target.closest('#flight-list') || e.target.closest('#wine-list')) {
                 return;
             }
 
