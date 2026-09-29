@@ -27,6 +27,23 @@
             font-family: 'Gowun Batang', 'Georgia', serif !important;
         }
 
+        /* Antique Tactile Cask Badge */
+        .cask-badge {
+            display: inline-flex;
+            align-items: center;
+            font-size: 8px;
+            font-weight: 700;
+            line-height: 1;
+            padding: 2.5px 5.5px;
+            border-radius: 4px;
+            background-color: rgba(92, 64, 40, 0.12);
+            color: #4a3428;
+            border: 1px solid rgba(135, 102, 70, 0.32);
+            letter-spacing: 0.02em;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
         /* Smooth Slider Container */
         #slider-viewport {
             width: 100%;
@@ -495,645 +512,843 @@
 
                 <!-- ================= PAGE 3: SPEYSIDE ================= -->
                 <div class="page-slide">
-                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-speyside" data-eng="Scotch Single Malt - Speyside" data-kor="스카치 싱글몰트 - 스페이사이드">스카치 싱글몰트 - 스페이사이드</h3>
-                    <div class="space-y-2.5 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="speyside-list">
+                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-3 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-speyside" data-eng="Scotch Single Malt - Speyside" data-kor="스카치 싱글몰트 - 스페이사이드">스카치 싱글몰트 - 스페이사이드</h3>
+                    <div class="space-y-2 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="speyside-list">
                         <!-- Glenlivet 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Glenlivet 12 YO (40%)" data-kor="글렌리벳 12년 (40%)">글렌리벳 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Glenlivet 12 YO (40%)" data-kor="글렌리벳 12년 (40%)">글렌리벳 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & European Oak] Fresh apple and floral notes, very smooth" data-kor="[버번 & 유러피안 오크] 상큼한 청사과와 화사한 꽃향, 부드러운 입문용">[버번 & 유러피안 오크] 상큼한 청사과와 화사한 꽃향, 부드러운 입문용</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & European Oak" data-kor="버번 & 유러피안 오크">버번 & 유러피안 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Fresh apple and floral notes, very smooth" data-kor="상큼한 청사과와 화사한 꽃향, 부드러운 입문용">상큼한 청사과와 화사한 꽃향, 부드러운 입문용</p>
+                            </div>
                         </div>
                         <!-- Glenlivet 15 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Glenlivet 15 YO (40%)" data-kor="글렌리벳 15년 (40%)">글렌리벳 15년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Glenlivet 15 YO (40%)" data-kor="글렌리벳 15년 (40%)">글렌리벳 15년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[French Limousin Oak] Subtle nuts and autumn butter from French oak" data-kor="[프렌치 리무쟁 오크] 프랑스 오크가 주는 은은한 견과류와 가을 버터 풍미">[프렌치 리무쟁 오크] 프랑스 오크가 주는 은은한 견과류와 가을 버터 풍미</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="French Limousin Oak" data-kor="프렌치 리무쟁 오크">프렌치 리무쟁 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Subtle nuts and autumn butter from French oak" data-kor="프랑스 오크가 주는 은은한 견과류와 가을 버터 풍미">프랑스 오크가 주는 은은한 견과류와 가을 버터 풍미</p>
+                            </div>
                         </div>
                         <!-- Glenlivet 18 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Glenlivet 18 YO (43%)" data-kor="글렌리벳 18년 (43%)">글렌리벳 18년 (43%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Glenlivet 18 YO (43%)" data-kor="글렌리벳 18년 (43%)">글렌리벳 18년 (43%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Sherry Casks] Ripe orange, warm spice, and long mature finish" data-kor="[퍼스트필 버번 & 셰리 오크] 잘 익은 오렌지와 스파이시, 긴 여운의 숙성 밀도">[퍼스트필 버번 & 셰리 오크] 잘 익은 오렌지와 스파이시, 긴 여운의 숙성 밀도</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Sherry Casks" data-kor="퍼스트필 버번 & 셰리">퍼스트필 버번 & 셰리</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Ripe orange, warm spice, and long mature finish" data-kor="잘 익은 오렌지와 스파이시, 긴 여운의 숙성 밀도">잘 익은 오렌지와 스파이시, 긴 여운의 숙성 밀도</p>
+                            </div>
                         </div>
                         <!-- Glen Grant 10 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glen Grant 10 YO (40%)" data-kor="글렌그란트 10년 (40%)">글렌그란트 10년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glen Grant 10 YO (40%)" data-kor="글렌그란트 10년 (40%)">글렌그란트 10년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Ex-Bourbon Cask] Light and bright yellow orchard fruits, refreshing vibe" data-kor="[버번 배럴] 가볍고 화사한 노란 과일향, 산뜻한 낮술 감성">[버번 배럴] 가볍고 화사한 노란 과일향, 산뜻한 낮술 감성</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Ex-Bourbon Cask" data-kor="버번 배럴">버번 배럴</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Light and bright yellow orchard fruits, refreshing vibe" data-kor="가볍고 화사한 노란 과일향, 산뜻한 낮술 감성">가볍고 화사한 노란 과일향, 산뜻한 낮술 감성</p>
+                            </div>
                         </div>
                         <!-- Glen Grant 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glen Grant 12 YO (43%)" data-kor="글렌그란트 12년 (43%)">글렌그란트 12년 (43%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glen Grant 12 YO (43%)" data-kor="글렌그란트 12년 (43%)">글렌그란트 12년 (43%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.6</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.6</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Sherry Casks] Honey and ripe pear, textbook orchard sweetness" data-kor="[버번 & 셰리 캐스크] 달콤한 꿀과 잘 익은 배, 싱글몰트의 정석적인 과일 단맛">[버번 & 셰리 캐스크] 달콤한 꿀과 잘 익은 배, 싱글몰트의 정석적인 과일 단맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Sherry Casks" data-kor="버번 & 셰리 캐스크">버번 & 셰리 캐스크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Honey and ripe pear, textbook orchard sweetness" data-kor="달콤한 꿀과 잘 익은 배, 싱글몰트의 정석적인 과일 단맛">달콤한 꿀과 잘 익은 배, 싱글몰트의 정석적인 과일 단맛</p>
+                            </div>
                         </div>
                         <!-- Glenfiddich 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glenfiddich 12 YO (40%)" data-kor="글렌피딕 12년 (40%)">글렌피딕 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glenfiddich 12 YO (40%)" data-kor="글렌피딕 12년 (40%)">글렌피딕 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[American & European Sherry Oak] Crisp green apple and fresh pear notes" data-kor="[아메리칸 & 유러피안 셰리 오크] 전 세계가 사랑하는 산뜻한 청사과와 서양배">[아메리칸 & 유러피안 셰리 오크] 전 세계가 사랑하는 산뜻한 청사과와 서양배</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="American & European Sherry" data-kor="아메리칸 & 셰리 오크">아메리칸 & 셰리 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Crisp green apple and fresh pear notes" data-kor="전 세계가 사랑하는 산뜻한 청사과와 서양배">전 세계가 사랑하는 산뜻한 청사과와 서양배</p>
+                            </div>
                         </div>
                         <!-- Glenfiddich 15 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glenfiddich 15 YO (40%)" data-kor="글렌피딕 15년 (40%)">글렌피딕 15년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glenfiddich 15 YO (40%)" data-kor="글렌피딕 15년 (40%)">글렌피딕 15년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Solera Vat (Sherry, Bourbon, Virgin Oak)] Solera-aged honey and rich pear" data-kor="[솔레라 바트 (셰리·버번·뉴오크)] 솔레라 방식으로 완성한 꿀과 농축된 서양배">[솔레라 바트 (셰리·버번·뉴오크)] 솔레라 방식으로 완성한 꿀과 농축된 서양배</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Solera Vat (Sherry·Bourbon·Virgin)" data-kor="솔레라 바트">솔레라 바트</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Solera-aged honey and rich pear" data-kor="솔레라 방식으로 완성한 꿀과 농축된 서양배">솔레라 방식으로 완성한 꿀과 농축된 서양배</p>
+                            </div>
                         </div>
                         <!-- Glenrothes 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Glenrothes 12 YO (40%)" data-kor="글렌로티스 12년 (40%)">글렌로티스 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Glenrothes 12 YO (40%)" data-kor="글렌로티스 12년 (40%)">글렌로티스 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[100% Sherry Seasoned Oak] Vanilla, sweet banana, and creamy texture" data-kor="[100% 셰리 시즈닝 오크] 부드러운 바닐라와 달콤한 바나나, 크리미한 질감">[100% 셰리 시즈닝 오크] 부드러운 바닐라와 달콤한 바나나, 크리미한 질감</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="100% Sherry Seasoned Oak" data-kor="100% 셰리 시즈닝">100% 셰리 시즈닝</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Vanilla, sweet banana, and creamy texture" data-kor="부드러운 바닐라와 달콤한 바나나, 크리미한 질감">부드러운 바닐라와 달콤한 바나나, 크리미한 질감</p>
+                            </div>
                         </div>
                         <!-- GlenAllachie 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="GlenAllachie 12 YO (46%)" data-kor="글렌알라키 12년 (46%)">글렌알라키 12년 (46%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="GlenAllachie 12 YO (46%)" data-kor="글렌알라키 12년 (46%)">글렌알라키 12년 (46%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[PX & Oloroso Sherry, Virgin Oak] Rich sherry wine and chocolate by Billy Walker" data-kor="[PX & 올로로소 셰리 + 버진 오크] 빌리 워커의 진한 셰리 와인과 달콤한 초콜릿">[PX & 올로로소 셰리 + 버진 오크] 빌리 워커의 진한 셰리 와인과 달콤한 초콜릿</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="PX·Oloroso & Virgin Oak" data-kor="PX & 올로로소 + 버진">PX & 올로로소 + 버진</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Rich sherry wine and chocolate by Billy Walker" data-kor="빌리 워커의 진한 셰리 와인과 달콤한 초콜릿">빌리 워커의 진한 셰리 와인과 달콤한 초콜릿</p>
+                            </div>
                         </div>
                         <!-- GlenAllachie 15 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="GlenAllachie 15 YO (46%)" data-kor="글렌알라키 15년 (46%)">글렌알라키 15년 (46%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="GlenAllachie 15 YO (46%)" data-kor="글렌알라키 15년 (46%)">글렌알라키 15년 (46%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[PX & Oloroso Puncheons] Butterscotch and dark fig, the peak of sticky sherry" data-kor="[PX & 올로로소 셰리 펀천] 버터스카치와 무화과, 눅진하고 달달한 셰리의 정수">[PX & 올로로소 셰리 펀천] 버터스카치와 무화과, 눅진하고 달달한 셰리의 정수</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="PX & Oloroso Puncheons" data-kor="PX & 올로로소 펀천">PX & 올로로소 펀천</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Butterscotch and dark fig, the peak of sticky sherry" data-kor="버터스카치와 무화과, 눅진하고 달달한 셰리의 정수">버터스카치와 무화과, 눅진하고 달달한 셰리의 정수</p>
+                            </div>
                         </div>
                         <!-- GlenAllachie 10 CS -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="GlenAllachie 10 YO CS Batch 12 (59.7%)" data-kor="글렌알라키 10년 CS 배치 12 (59.7%)">글렌알라키 10년 CS 배치 12 (59.7%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="GlenAllachie 10 YO CS Batch 12 (59.7%)" data-kor="글렌알라키 10년 CS 배치 12 (59.7%)">글렌알라키 10년 CS 배치 12 (59.7%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[PX, Oloroso Sherry & Wine Casks] Uncut CS punch with dark sugar and cacao" data-kor="[PX·올로로소 셰리 & 와인 캐스크] 무가수 원액의 폭발적 흑설탕과 카카오 펀치">[PX·올로로소 셰리 & 와인 캐스크] 무가수 원액의 폭발적 흑설탕과 카카오 펀치</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="PX·Oloroso & Wine CS" data-kor="PX·올로로소 & 와인 CS">PX·올로로소 & 와인 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Uncut CS punch with dark sugar and cacao" data-kor="무가수 원액의 폭발적 흑설탕과 카카오 펀치">무가수 원액의 폭발적 흑설탕과 카카오 펀치</p>
+                            </div>
                         </div>
                         <!-- Macallan Double -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Macallan 12 YO Double Cask (40%)" data-kor="맥캘란 12년 더블 캐스크 (40%)">맥캘란 12년 더블 캐스크 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Macallan 12 YO Double Cask (40%)" data-kor="맥캘란 12년 더블 캐스크 (40%)">맥캘란 12년 더블 캐스크 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Sherry Seasoned Double Oak] Sweet vanilla balance from sherry & American oak" data-kor="[아메리칸 & 유러피안 셰리 오크] 우디함 뒤에 깔리는 달콤하고 고소한 바닐라">[아메리칸 & 유러피안 셰리 오크] 우디함 뒤에 깔리는 달콤하고 고소한 바닐라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Sherry Double Oak" data-kor="더블 셰리 시즈닝">더블 셰리 시즈닝</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Sweet vanilla balance from sherry & American oak" data-kor="우디함 뒤에 깔리는 달콤하고 고소한 바닐라">우디함 뒤에 깔리는 달콤하고 고소한 바닐라</p>
+                            </div>
                         </div>
                         <!-- Macallan Sherry -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Macallan 12 YO Sherry Cask (40%)" data-kor="맥캘란 12년 셰리 캐스크 (40%)">맥캘란 12년 셰리 캐스크 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Macallan 12 YO Sherry Cask (40%)" data-kor="맥캘란 12년 셰리 캐스크 (40%)">맥캘란 12년 셰리 캐스크 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.9</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.9</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[100% European Sherry Oak] Dried raisins and cinnamon, classic iconic sherry" data-kor="[유러피안 셰리 오크 100%] 말린 건포도와 시나몬, 독보적인 정통 셰리 풍미">[유러피안 셰리 오크 100%] 말린 건포도와 시나몬, 독보적인 정통 셰리 풍미</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="100% European Sherry" data-kor="유러피안 셰리 100%">유러피안 셰리 100%</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Dried raisins and cinnamon, classic iconic sherry" data-kor="말린 건포도와 시나몬, 독보적인 정통 셰리 풍미">말린 건포도와 시나몬, 독보적인 정통 셰리 풍미</p>
+                            </div>
                         </div>
                         <!-- Balvenie Doublewood -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Balvenie 12 YO 더블우드 (40%)" data-kor="발베니 12년 더블우드 (40%)">발베니 12년 더블우드 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Balvenie 12 YO 더블우드 (40%)" data-kor="발베니 12년 더블우드 (40%)">발베니 12년 더블우드 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon Cask & Sherry Finish] Honey and soft oak vanilla, smooth and gentle" data-kor="[버번 배럴 & 셰리 캐스크 피니시] 은은한 꿀향과 부드러운 오크 바닐라 밸런스">[버번 배럴 & 셰리 캐스크 피니시] 은은한 꿀향과 부드러운 오크 바닐라 밸런스</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Sherry Finish" data-kor="버번 & 셰리 피니시">버번 & 셰리 피니시</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Honey and soft oak vanilla, smooth and gentle" data-kor="은은한 꿀향과 부드러운 오크 바닐라 밸런스">은은한 꿀향과 부드러운 오크 바닐라 밸런스</p>
+                            </div>
                         </div>
                         <!-- Balvenie Single Barrel -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Balvenie 12 YO Single Barrel - Kelsey (47.8%)" data-kor="발베니 12년 싱글배럴 - 켈시 (47.8%)">발베니 12년 싱글배럴 - 켈시 (47.8%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Balvenie 12 YO Single Barrel - Kelsey (47.8%)" data-kor="발베니 12년 싱글배럴 - 켈시 (47.8%)">발베니 12년 싱글배럴 - 켈시 (47.8%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.9</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.9</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[First Fill Bourbon Single Barrel] Intense honey and pear from a single oak cask" data-kor="[퍼스트 필 버번 배럴 단독] 단 하나의 오크통에서 뽑아낸 선명하고 진한 꿀과 배">[퍼스트 필 버번 배럴 단독] 단 하나의 오크통에서 뽑아낸 선명하고 진한 꿀과 배</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="1st-Fill Bourbon Single Barrel" data-kor="퍼스트필 버번 배럴">퍼스트필 버번 배럴</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Intense honey and pear from a single oak cask" data-kor="단 하나의 오크통에서 뽑아낸 선명하고 진한 꿀과 배">단 하나의 오크통에서 뽑아낸 선명하고 진한 꿀과 배</p>
+                            </div>
                         </div>
-                        <!-- BenRiach Single Cask 2008 17yo Rotten Glass -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="BenRiach Single Cask 2008 17 YO Moscatel Hogshead Rotten Glass (58.4%)" data-kor="벤리악 싱글 캐스크 2008 17년 모스카텔 혹스헤드 로튼 글래스 (58.4%)">벤리악 싱글 캐스크 2008 17년 모스카텔 혹스헤드 로튼 글래스 (58.4%)</span>
+                        <!-- BenRiach Single Cask -->
+                        <div class="menu-item flex flex-col pb-1.5">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="BenRiach Single Cask 2008 17 YO Rotten Glass (58.4%)" data-kor="벤리악 싱글 캐스크 2008 17년 로튼 글래스 (58.4%)">벤리악 싱글 캐스크 2008 17년 로튼 글래스 (58.4%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Moscatel Wine Hogshead Single Cask] 58.4% CS, lush grape, raisin and honey" data-kor="[모스카텔 와인 혹스헤드 싱글캐스크] 58.4% CS, 화려한 청포도와 건포도, 진한 꿀">[모스카텔 와인 혹스헤드 싱글캐스크] 58.4% CS, 화려한 청포도와 건포도, 진한 꿀</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Moscatel Hogshead CS" data-kor="모스카텔 혹스헤드 CS">모스카텔 혹스헤드 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="58.4% CS, lush grape, raisin and honey" data-kor="58.4% CS, 화려한 청포도와 건포도, 진한 꿀">58.4% CS, 화려한 청포도와 건포도, 진한 꿀</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ================= PAGE 4: HIGHLAND & ISLAND ================= -->
                 <div class="page-slide">
-                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-highland" data-eng="Highlands & Islands" data-kor="하이랜드 & 아일랜드">하이랜드 & 아일랜드</h3>
-                    <div class="space-y-2.5 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="highland-island-list">
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-1 mb-1" id="label-highlands" data-eng="[ HIGHLANDS ]" data-kor="[ 하이랜드 ]">[ 하이랜드 ]</div>
+                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-3 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-highland" data-eng="Highlands & Islands" data-kor="하이랜드 & 아일랜드">하이랜드 & 아일랜드</h3>
+                    <div class="space-y-2 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="highland-island-list">
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-0.5 mb-1" id="label-highlands" data-eng="[ HIGHLANDS ]" data-kor="[ 하이랜드 ]">[ 하이랜드 ]</div>
                         
                         <!-- Glenmorangie Original -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glenmorangie The Original 12 YO (40%)" data-kor="글렌모렌지 오리지널 12년 (40%)">글렌모렌지 오리지널 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glenmorangie The Original 12 YO (40%)" data-kor="글렌모렌지 오리지널 12년 (40%)">글렌모렌지 오리지널 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.6</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.6</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Ex-Bourbon American White Oak] Orange and peach, bright and delicate malt" data-kor="[버번 캐스크] 오렌지와 복숭아, 가장 화사하고 산뜻하며 섬세한 캐릭터">[버번 캐스크] 오렌지와 복숭아, 가장 화사하고 산뜻하며 섬세한 캐릭터</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Ex-Bourbon American Oak" data-kor="버번 캐스크">버번 캐스크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Orange and peach, bright and delicate malt" data-kor="오렌지와 복숭아, 가장 화사하고 산뜻하며 섬세한 캐릭터">오렌지와 복숭아, 가장 화사하고 산뜻하며 섬세한 캐릭터</p>
+                            </div>
                         </div>
                         <!-- Glenmorangie Quinta Ruban -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glenmorangie Quinta Ruban (46%)" data-kor="글렌모렌지 퀸타루반 (46%)">글렌모렌지 퀸타루반 (46%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glenmorangie Quinta Ruban (46%)" data-kor="글렌모렌지 퀸타루반 (46%)">글렌모렌지 퀸타루반 (46%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.9</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.9</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Ruby Port Pipe Finish] Dark chocolate and fresh mint from port wine cask" data-kor="[루비 포트 파이프 피니시] 포트 와인통이 선사하는 진한 다크 초콜릿과 박하향">[루비 포트 파이프 피니시] 포트 와인통이 선사하는 진한 다크 초콜릿과 박하향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Ruby Port Pipe Finish" data-kor="루비 포트 파이프">루비 포트 파이프</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Dark chocolate and fresh mint from port wine cask" data-kor="포트 와인통이 선사하는 진한 다크 초콜릿과 박하향">포트 와인통이 선사하는 진한 다크 초콜릿과 박하향</p>
+                            </div>
                         </div>
                         <!-- GlenDronach 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="GlenDronach 12 YO (43%)" data-kor="글렌드로낙 12년 (43%)">글렌드로낙 12년 (43%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="GlenDronach 12 YO (43%)" data-kor="글렌드로낙 12년 (43%)">글렌드로낙 12년 (43%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[PX & Oloroso Sherry Casks] Dry sherry classic with rich plum and woody notes" data-kor="[PX & 올로로소 셰리 캐스크] 정통 셰리의 대명사, 묵직하고 쌉싸름한 오크와 건자두">[PX & 올로로소 셰리 캐스크] 정통 셰리의 대명사, 묵직하고 쌉싸름한 오크와 건자두</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="PX & Oloroso Sherry" data-kor="PX & 올로로소 셰리">PX & 올로로소 셰리</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Dry sherry classic with rich plum and woody notes" data-kor="정통 셰리의 대명사, 묵직하고 쌉싸름한 오크와 건자두">정통 셰리의 대명사, 묵직하고 쌉싸름한 오크와 건자두</p>
+                            </div>
                         </div>
                         <!-- Edradour 10 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Edradour 10 YO (40%)" data-kor="에드라두어 10년 (40%)">에드라두어 10년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Edradour 10 YO (40%)" data-kor="에드라두어 10년 (40%)">에드라두어 10년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Oloroso Sherry] Scotland's smallest distillery run by just 2 craftsmen, rustic & sticky sherry" data-kor="[올로로소 셰리] 스코틀랜드에서 가장 작은 증류소, 단 2명의 장인이 빚어낸 쿰쿰하고 눅진한 셰리">[올로로소 셰리] 스코틀랜드에서 가장 작은 증류소, 단 2명의 장인이 빚어낸 쿰쿰하고 눅진한 셰리</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Oloroso Sherry" data-kor="올로로소 셰리">올로로소 셰리</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Scotland's smallest distillery (2 staff), rustic & sticky sherry" data-kor="스코틀랜드 초소형 증류소, 단 2명의 장인이 빚은 눅진한 셰리">스코틀랜드 초소형 증류소, 단 2명의 장인이 빚은 눅진한 셰리</p>
+                            </div>
                         </div>
                         <!-- Glen Garioch 15 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Glen Garioch 15 YO (53.7%)" data-kor="글렌기어리 15년 (53.7%)">글렌기어리 15년 (53.7%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Glen Garioch 15 YO (53.7%)" data-kor="글렌기어리 15년 (53.7%)">글렌기어리 15년 (53.7%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[100% Oloroso Sherry] Powerful 53.7% sherry kick, dried figs and warm spices" data-kor="[100% 올로로소 셰리] 53.7도의 묵직한 셰리 타격감, 말린 무화과와 가죽향">[100% 올로로소 셰리] 53.7도의 묵직한 셰리 타격감, 말린 무화과와 가죽향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="100% Oloroso Sherry" data-kor="100% 올로로소 셰리">100% 올로로소 셰리</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Powerful 53.7% sherry kick, dried figs and warm spices" data-kor="53.7도의 묵직한 셰리 타격감, 말린 무화과와 가죽향">53.7도의 묵직한 셰리 타격감, 말린 무화과와 가죽향</p>
+                            </div>
                         </div>
                         <!-- Dalmore 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="The Dalmore 12 YO (40%)" data-kor="달모어 12년 (40%)">달모어 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="The Dalmore 12 YO (40%)" data-kor="달모어 12년 (40%)">달모어 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.9</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.9</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Oloroso Sherry] Citrus orange peel and dark cacao, rich and stylish" data-kor="[버번 & 올로로소 셰리 캐스크] 오렌지 껍질과 진한 카카오, 쌉쌀하고 차분한 맛">[버번 & 올로로소 셰리 캐스크] 오렌지 껍질과 진한 카카오, 쌉쌀하고 차분한 맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Oloroso Sherry" data-kor="버번 & 올로로소 셰리">버번 & 올로로소 셰리</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Citrus orange peel and dark cacao, rich and stylish" data-kor="오렌지 껍질과 진한 카카오, 쌉쌀하고 차분한 맛">오렌지 껍질과 진한 카카오, 쌉쌀하고 차분한 맛</p>
+                            </div>
                         </div>
                         <!-- Signatory Royal Brackla 13 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Signatory Royal Brackla 13 YO (57.1%)" data-kor="시그나토리 로얄 브라클라 13년 (57.1%)">시그나토리 로얄 브라클라 13년 (57.1%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Signatory Royal Brackla 13 YO (57.1%)" data-kor="시그나토리 로얄 브라클라 13년 (57.1%)">시그나토리 로얄 브라클라 13년 (57.1%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Oloroso Sherry Finish CS] Cask strength IB, rich sherry oak and royal elegance" data-kor="[올로로소 셰리 피니시 CS] 독립 병입 57.1% 원액, 진하고 우아한 셰리 오크 캐릭터">[올로로소 셰리 피니시 CS] 독립 병입 57.1% 원액, 진하고 우아한 셰리 오크 캐릭터</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Oloroso Sherry Finish CS" data-kor="올로로소 셰리 CS">올로로소 셰리 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Cask strength IB, rich sherry oak and royal elegance" data-kor="독립 병입 57.1% 원액, 진하고 우아한 셰리 오크 캐릭터">독립 병입 57.1% 원액, 진하고 우아한 셰리 오크 캐릭터</p>
+                            </div>
                         </div>
                         
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1" id="label-islands" data-eng="[ ISLANDS ]" data-kor="[ 아일랜드 ]">[ 아일랜드 ]</div>
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-islands" data-eng="[ ISLANDS ]" data-kor="[ 아일랜드 ]">[ 아일랜드 ]</div>
                         <!-- Talisker 10 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Talisker 10 YO (45.8%)" data-kor="탈리스커 10년 (45.8%)">탈리스커 10년 (45.8%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Talisker 10 YO (45.8%)" data-kor="탈리스커 10년 (45.8%)">탈리스커 10년 (45.8%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.6</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.6</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[American Refill Oak] Sea fog, salty brine, and a spicy black pepper twist" data-kor="[아메리칸 리필 오크] 바다 안개와 짭조름한 짠맛, 뒤따라오는 매콤한 흑후추">[아메리칸 리필 오크] 바다 안개와 짭조름한 짠맛, 뒤따라오는 매콤한 흑후추</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="American Refill Oak" data-kor="아메리칸 리필 오크">아메리칸 리필 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Sea fog, salty brine, and a spicy black pepper twist" data-kor="바다 안개와 짭조름한 짠맛, 뒤따라오는 매콤한 흑후추">바다 안개와 짭조름한 짠맛, 뒤따라오는 매콤한 흑후추</p>
+                            </div>
                         </div>
                         <!-- Highland Park 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Highland Park 12 YO (40%)" data-kor="하이랜드 파크 12년 (40%)">하이랜드 파크 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Highland Park 12 YO (40%)" data-kor="하이랜드 파크 12년 (40%)">하이랜드 파크 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Sherry Seasoned Oak] Orkney heather honey sweetness with a gentle whisper of smoke" data-kor="[셰리 시즈닝 오크] 오크니 섬의 달콤한 헤더 꿀 향 뒤에 살며시 숨은 은은한 피트 훈연">[셰리 시즈닝 오크] 오크니 섬의 달콤한 헤더 꿀 향 뒤에 살며시 숨은 은은한 피트 훈연</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Sherry Seasoned Oak" data-kor="셰리 시즈닝 오크">셰리 시즈닝 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Orkney heather honey sweetness with a gentle whisper of smoke" data-kor="오크니 섬의 달콤한 헤더 꿀 향 뒤에 살며시 숨은 은은한 피트 훈연">오크니 섬의 달콤한 헤더 꿀 향 뒤에 살며시 숨은 은은한 피트 훈연</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ================= PAGE 5: ISLAY (PEAT) ================= -->
                 <div class="page-slide">
-                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-islay" data-eng="Scotch Single Malt - Islay Peat" data-kor="스카치 싱글몰트 - 아일라 피트">스카치 싱글몰트 - 아일라 피트</h3>
-                    <div class="space-y-2.5 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="islay-list">
+                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-3 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-islay" data-eng="Scotch Single Malt - Islay Peat" data-kor="스카치 싱글몰트 - 아일라 피트">스카치 싱글몰트 - 아일라 피트</h3>
+                    <div class="space-y-2 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="islay-list">
                         <!-- Ardbeg 5 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Ardbeg 5 YO (47.4%)" data-kor="아드벡 5년 Wee Beastie (47.4%)">아드벡 5년 Wee Beastie (47.4%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Ardbeg 5 YO Wee Beastie (47.4%)" data-kor="아드벡 5년 Wee Beastie (47.4%)">아드벡 5년 Wee Beastie (47.4%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.6</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.6</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Oloroso Sherry] Wild, raw leather and smoky BBQ peat explosion" data-kor="[버번 & 올로로소 셰리] 거칠고 자극적인 생가죽 향, 불타는 숯불 장작 구이 감성">[버번 & 올로로소 셰리] 거칠고 자극적인 생가죽 향, 불타는 숯불 장작 구이 감성</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Oloroso Sherry" data-kor="버번 & 올로로소 셰리">버번 & 올로로소 셰리</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Wild, raw leather and smoky BBQ peat explosion" data-kor="거칠고 자극적인 생가죽 향, 불타는 숯불 장작 구이 감성">거칠고 자극적인 생가죽 향, 불타는 숯불 장작 구이 감성</p>
+                            </div>
                         </div>
                         <!-- Ardbeg 10 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Ardbeg 10 YO (46%)" data-kor="아드벡 10년 (46%)">아드벡 10년 (46%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Ardbeg 10 YO (46%)" data-kor="아드벡 10년 (46%)">아드벡 10년 (46%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[American Bourbon Barrel] Crisp lemon-lime citrus wrapped in campfire peat" data-kor="[아메리칸 버번 배럴] 산뜻한 레몬라임 시트러스와 은은하게 어우러진 모닥불 피트">[아메리칸 버번 배럴] 산뜻한 레몬라임 시트러스와 은은하게 어우러진 모닥불 피트</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="American Bourbon Barrel" data-kor="아메리칸 버번 배럴">아메리칸 버번 배럴</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Crisp lemon-lime citrus wrapped in campfire peat" data-kor="산뜻한 레몬라임 시트러스와 은은하게 어우러진 모닥불 피트">산뜻한 레몬라임 시트러스와 은은하게 어우러진 모닥불 피트</p>
+                            </div>
                         </div>
                         <!-- Ardbeg Uigeadail -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Ardbeg Uigeadail (54.2%)" data-kor="아드벡 우거다일 (54.2%)">아드벡 우거다일 (54.2%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Ardbeg Uigeadail (54.2%)" data-kor="아드벡 우거다일 (54.2%)">아드벡 우거다일 (54.2%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Oloroso Sherry Butts] Rich sherry sweetness meeting intense heavy peat smoke" data-kor="[버번 & 올로로소 셰리 뱃] 셰리의 눅진한 단맛과 화산재 같은 묵직한 훈연향의 조화">[버번 & 올로로소 셰리 뱃] 셰리의 눅진한 단맛과 화산재 같은 묵직한 훈연향의 조화</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Oloroso Butts" data-kor="버번 & 올로로소 뱃">버번 & 올로로소 뱃</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Rich sherry sweetness meeting intense heavy peat smoke" data-kor="셰리의 눅진한 단맛과 화산재 같은 묵직한 훈연향의 조화">셰리의 눅진한 단맛과 화산재 같은 묵직한 훈연향의 조화</p>
+                            </div>
                         </div>
                         <!-- Ardbeg Corry -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Ardbeg Corryvreckan (57.1%)" data-kor="아드벡 코리브레칸 (57.1%)">아드벡 코리브레칸 (57.1%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Ardbeg Corryvreckan (57.1%)" data-kor="아드벡 코리브레칸 (57.1%)">아드벡 코리브레칸 (57.1%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[French Virgin Oak & Bourbon] Swirling hot black pepper and deep Islay maritime smoke" data-kor="[프렌치 버진 오크 & 버번] 아일라의 바다를 농축한 매콤한 흑후추와 소용돌이치는 화약향">[프렌치 버진 오크 & 버번] 아일라의 바다를 농축한 매콤한 흑후추와 소용돌이치는 화약향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="French Virgin Oak & Bourbon" data-kor="프렌치 버진 & 버번">프렌치 버진 & 버번</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Swirling hot black pepper and deep Islay maritime smoke" data-kor="아일라의 바다를 농축한 매콤한 흑후추와 소용돌이치는 화약향">아일라의 바다를 농축한 매콤한 흑후추와 소용돌이치는 화약향</p>
+                            </div>
                         </div>
                         <!-- Laphroaig 10 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Laphroaig 10 YO (40%)" data-kor="라프로익 10년 (40%)">라프로익 10년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Laphroaig 10 YO (40%)" data-kor="라프로익 10년 (40%)">라프로익 10년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Ex-Bourbon Barrels] Medicinal iodine antiseptic, seaweed, and heavy peat ash" data-kor="[버번 배럴] 정로환 소독약과 해초, 재 향이 선명한 정석적인 호불호 깡패">[버번 배럴] 정로환 소독약과 해초, 재 향이 선명한 정석적인 호불호 깡패</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Ex-Bourbon Barrels" data-kor="버번 배럴">버번 배럴</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Medicinal iodine antiseptic, seaweed, and heavy peat ash" data-kor="정로환 소독약과 해초, 재 향이 선명한 정석적인 호불호 깡패">정로환 소독약과 해초, 재 향이 선명한 정석적인 호불호 깡패</p>
+                            </div>
                         </div>
                         <!-- Laphroaig 10 Sherry Cask -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Laphroaig 10 YO Sherry Cask (48%)" data-kor="라프로익 10년 셰리 (48%)">라프로익 10년 셰리 (48%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Laphroaig 10 YO Sherry Cask (48%)" data-kor="라프로익 10년 셰리 (48%)">라프로익 10년 셰리 (48%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.9</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.9</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Oloroso Sherry Finish] Medicinal peat smoke intertwined with rich sherry sweetness" data-kor="[버번 숙성 후 올로로소 셰리 피니시] 정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리">[버번 숙성 후 올로로소 셰리 피니시] 정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Oloroso Sherry Finish" data-kor="올로로소 셰리 피니시">올로로소 셰리 피니시</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Medicinal peat smoke intertwined with rich sherry sweetness" data-kor="정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리">정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리</p>
+                            </div>
                         </div>
                         <!-- Laphroaig 10 CS Batch 16 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Laphroaig 10 YO CS Batch 16 (58.5%)" data-kor="라프로익 10년 CS 배치 16 (58.5%)">라프로익 10년 CS 배치 16 (58.5%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Laphroaig 10 YO CS Batch 16 (58.5%)" data-kor="라프로익 10년 CS 배치 16 (58.5%)">라프로익 10년 CS 배치 16 (58.5%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[First-Fill Bourbon Barrels] Uncut unfiltered cask strength peat punch, Batch 16" data-kor="[퍼스트필 버번 배럴 단독] 물 타지 않은 58.5% 원액, 압도적인 고도수 피트 펀치 (배치 16)">[퍼스트필 버번 배럴 단독] 물 타지 않은 58.5% 원액, 압도적인 고도수 피트 펀치 (배치 16)</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="1st-Fill Bourbon Barrels CS" data-kor="퍼스트필 버번 배럴 CS">퍼스트필 버번 배럴 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Uncut unfiltered cask strength peat punch, Batch 16" data-kor="물 타지 않은 58.5% 원액, 압도적인 고도수 피트 펀치 (배치 16)">물 타지 않은 58.5% 원액, 압도적인 고도수 피트 펀치 (배치 16)</p>
+                            </div>
                         </div>
                         <!-- Laphroaig 10 CS Batch 17 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Laphroaig 10 YO CS Batch 17 (58.3%)" data-kor="라프로익 10년 CS 배치 17 (58.3%)">라프로익 10년 CS 배치 17 (58.3%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Laphroaig 10 YO CS Batch 17 (58.3%)" data-kor="라프로익 10년 CS 배치 17 (58.3%)">라프로익 10년 CS 배치 17 (58.3%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[First-Fill Bourbon Barrels] Intense medicinal iodine and deep oily finish, Batch 17" data-kor="[퍼스트필 버번 배럴 단독] 강렬한 해초 소독약과 오크 오일의 깊고 긴 피니시 (배치 17)">[퍼스트필 버번 배럴 단독] 강렬한 해초 소독약과 오크 오일의 깊고 긴 피니시 (배치 17)</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="1st-Fill Bourbon Barrels CS" data-kor="퍼스트필 버번 배럴 CS">퍼스트필 버번 배럴 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Intense medicinal iodine and deep oily finish, Batch 17" data-kor="강렬한 해초 소독약과 오크 오일의 깊고 긴 피니시 (배치 17)">강렬한 해초 소독약과 오크 오일의 깊고 긴 피니시 (배치 17)</p>
+                            </div>
                         </div>
                         <!-- Lagavulin 16 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Lagavulin 16 YO (43%)" data-kor="라가불린 16년 (43%)">라가불린 16년 (43%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Lagavulin 16 YO (43%)" data-kor="라가불린 16년 (43%)">라가불린 16년 (43%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Refill American & European Oak] Calm, elegant autumn leaf smoke and deep sweetness" data-kor="[리필 아메리칸 & 유러피안 오크] 피트의 왕, 차분하고 우아한 낙엽 탄 연기와 고급스러운 바닐라">[리필 아메리칸 & 유러피안 오크] 피트의 왕, 차분하고 우아한 낙엽 탄 연기와 고급스러운 바닐라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Refill American & European" data-kor="리필 아메리칸 & 유러피안">리필 아메리칸 & 유러피안</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Calm, elegant autumn leaf smoke and deep sweetness" data-kor="피트의 왕, 차분하고 우아한 낙엽 탄 연기와 고급 바닐라">피트의 왕, 차분하고 우아한 낙엽 탄 연기와 고급 바닐라</p>
+                            </div>
                         </div>
                         <!-- Bowmore 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Bowmore 12 YO (40%)" data-kor="보모어 12년 (40%)">보모어 12년 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Bowmore 12 YO (40%)" data-kor="보모어 12년 (40%)">보모어 12년 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Sherry Casks] Gentle, soft peat holding hands with bright fruity sweetness" data-kor="[버번 & 셰리 캐스크] 부드럽고 가벼운 피트향 뒤에 피어나는 화사한 과일 단맛">[버번 & 셰리 캐스크] 부드럽고 가벼운 피트향 뒤에 피어나는 화사한 과일 단맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Sherry Casks" data-kor="버번 & 셰리 캐스크">버번 & 셰리 캐스크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Gentle, soft peat holding hands with bright fruity sweetness" data-kor="부드럽고 가벼운 피트향 뒤에 피어나는 화사한 과일 단맛">부드럽고 가벼운 피트향 뒤에 피어나는 화사한 과일 단맛</p>
+                            </div>
                         </div>
                         <!-- Highland Park Seoul -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Highland Park Seoul Edition 3 (30ml) (58.7%)" data-kor="하이랜드 파크 서울 에디션 3 (30ml) (58.7%)">하이랜드 파크 서울 에디션 3 (30ml) (58.7%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Highland Park Seoul Edition 3 (30ml) (58.7%)" data-kor="하이랜드 파크 서울 에디션 3 (30ml) (58.7%)">하이랜드 파크 서울 에디션 3 (30ml) (58.7%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">7.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">7.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[1st Fill Sherry Hogshead CS] 19yo depth with heather honey, spices and refined smoke" data-kor="[퍼스트필 셰리 혹스헤드 싱글캐스크] 19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연">[퍼스트필 셰리 혹스헤드 싱글캐스크] 19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="1st Sherry Hogshead CS" data-kor="1st 셰리 혹스헤드 CS">1st 셰리 혹스헤드 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="19yo depth with heather honey, spices and refined smoke" data-kor="19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연">19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연</p>
+                            </div>
                         </div>
                         <!-- Caol Ila -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Caol Ila 12 YO (43%)" data-kor="쿨일라 12년 (43%)">쿨일라 12년 (43%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Caol Ila 12 YO (43%)" data-kor="쿨일라 12년 (43%)">쿨일라 12년 (43%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Refill Bourbon Cask] Clean, refreshing sea breeze and sweet citrusy peat" data-kor="[리필 버번 캐스크] 맑고 깨끗한 바닷바람, 가벼운 시트러스와 산뜻하고 고소한 연기">[리필 버번 캐스크] 맑고 깨끗한 바닷바람, 가벼운 시트러스와 산뜻하고 고소한 연기</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Refill Bourbon Cask" data-kor="리필 버번 캐스크">리필 버번 캐스크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Clean, refreshing sea breeze and sweet citrusy peat" data-kor="맑고 깨끗한 바닷바람, 가벼운 시트러스와 산뜻한 연기">맑고 깨끗한 바닷바람, 가벼운 시트러스와 산뜻한 연기</p>
+                            </div>
                         </div>
                         <!-- Signatory Caol Ila 11 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Signatory Caol Ila 11 YO (57.1%)" data-kor="시그나토리 쿨일라 11년 (57.1%)">시그나토리 쿨일라 11년 (57.1%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Signatory Caol Ila 11 YO (57.1%)" data-kor="시그나토리 쿨일라 11년 (57.1%)">시그나토리 쿨일라 11년 (57.1%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Dechar/Rechar Hogshead CS] Cask strength IB, intense sea salt and citrus peat punch" data-kor="[디차/리차 혹스헤드 CS] 독립 병입 57.1% 원액, 강렬한 피트 펀치와 시트러스">[디차/리차 혹스헤드 CS] 독립 병입 57.1% 원액, 강렬한 피트 펀치와 시트러스</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Dechar/Rechar Hogshead CS" data-kor="디차/리차 혹스헤드 CS">디차/리차 혹스헤드 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Cask strength IB, intense sea salt and citrus peat punch" data-kor="독립 병입 57.1% 원액, 강렬한 피트 펀치와 시트러스">독립 병입 57.1% 원액, 강렬한 피트 펀치와 시트러스</p>
+                            </div>
                         </div>
                         <!-- Octomore -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Octomore 16.1 (30ml) (59.3%)" data-kor="옥토모어 16.1 (30ml) (59.3%)">옥토모어 16.1 (30ml) (59.3%)</span>
+                        <div class="menu-item flex flex-col pb-1.5">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Octomore 16.1 (30ml) (59.3%)" data-kor="옥토모어 16.1 (30ml) (59.3%)">옥토모어 16.1 (30ml) (59.3%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">5.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">5.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[100% First-fill American Barrels] The peatiest high-proof monster on earth, 59.3% CS" data-kor="[100% 퍼스트필 아메리칸 오크 배럴] 세상에서 가장 피트 수치가 높은 스모키 괴물, 59.3% CS">[100% 퍼스트필 아메리칸 오크 배럴] 세상에서 가장 피트 수치가 높은 스모키 괴물, 59.3% CS</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="100% 1st-fill Bourbon CS" data-kor="100% 퍼스트필 버번 CS">100% 퍼스트필 버번 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="The peatiest high-proof monster on earth, 59.3% CS" data-kor="세상에서 가장 피트 수치가 높은 스모키 괴물, 59.3% CS">세상에서 가장 피트 수치가 높은 스모키 괴물, 59.3% CS</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ================= PAGE 6: WORLD & BLENDED ================= -->
                 <div class="page-slide">
-                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-world" data-eng="World & Blended Whisky" data-kor="월드 & 블렌디드 위스키">월드 & 블렌디드 위스키</h3>
-                    <div class="space-y-2.5 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="world-blended-list">
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-1 mb-1" id="label-taiwan" data-eng="[ TAIWAN MALT (KAVALAN) ]" data-kor="[ 대만 싱글몰트 - 카발란 ]">[ 대만 싱글몰트 - 카발란 ]</div>
+                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-3 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-world" data-eng="World & Blended Whisky" data-kor="월드 & 블렌디드 위스키">월드 & 블렌디드 위스키</h3>
+                    <div class="space-y-2 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="world-blended-list">
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-0.5 mb-1" id="label-taiwan" data-eng="[ TAIWAN MALT (KAVALAN) ]" data-kor="[ 대만 싱글몰트 - 카발란 ]">[ 대만 싱글몰트 - 카발란 ]</div>
                         <!-- Kavalan Distillery Edition -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Kavalan Distillery Edition (40%)" data-kor="카발란 디스틸러리 셀렉션 (40%)">카발란 디스틸러리 셀렉션 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Kavalan Distillery Edition (40%)" data-kor="카발란 디스틸러리 셀렉션 (40%)">카발란 디스틸러리 셀렉션 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Selected Refill Casks] Tropical fruits, coconut, and vivid vanilla oak from Taiwan" data-kor="[엄선된 리필 오크 캐스크] 망고·코코넛 등 아열대 과일 향과 화려하고 진한 바닐라 단맛">[엄선된 리필 오크 캐스크] 망고·코코넛 등 아열대 과일 향과 화려하고 진한 바닐라 단맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Selected Refill Casks" data-kor="엄선된 리필 오크">엄선된 리필 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Tropical fruits, coconut, and vivid vanilla oak from Taiwan" data-kor="망고·코코넛 등 아열대 과일 향과 화려하고 진한 바닐라 단맛">망고·코코넛 등 아열대 과일 향과 화려하고 진한 바닐라 단맛</p>
+                            </div>
                         </div>
                         <!-- Kavalan Solist Bourbon -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Kavalan Solist Bourbon (30ml)" data-kor="카발란 솔리스트 버번 (30ml)">카발란 솔리스트 버번 (30ml)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Kavalan Solist Bourbon (30ml)" data-kor="카발란 솔리스트 버번 (30ml)">카발란 솔리스트 버번 (30ml)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Ex-Bourbon Single Cask CS] Rich vanilla and butterscotch concentrated at cask strength" data-kor="[단독 버번 캐스크 CS] 물 타지 않은 고도수 원액, 바닐라와 아카시아 꿀의 묵직한 응축">[단독 버번 캐스크 CS] 물 타지 않은 고도수 원액, 바닐라와 아카시아 꿀의 묵직한 응축</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Ex-Bourbon Single Cask CS" data-kor="단독 버번 배럴 CS">단독 버번 배럴 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Rich vanilla and butterscotch concentrated at cask strength" data-kor="물 타지 않은 고도수 원액, 바닐라와 아카시아 꿀의 묵직한 응축">물 타지 않은 고도수 원액, 바닐라와 아카시아 꿀의 묵직한 응축</p>
+                            </div>
                         </div>
                         <!-- Kavalan Solist Port -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Kavalan Solist Port (30ml)" data-kor="카발란 솔리스트 포트 (30ml)">카발란 솔리스트 포트 (30ml)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Kavalan Solist Port (30ml)" data-kor="카발란 솔리스트 포트 (30ml)">카발란 솔리스트 포트 (30ml)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Ruby Port Single Cask CS] Sticky ruby wine, raisins, and rich jammy plum juice" data-kor="[루비 포트 와인 캐스크 CS] 붉은 포트 와인의 진득한 달콤함, 말린 건포도와 무화과 잼">[루비 포트 와인 캐스크 CS] 붉은 포트 와인의 진득한 달콤함, 말린 건포도와 무화과 잼</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Ruby Port Single Cask CS" data-kor="루비 포트 와인 CS">루비 포트 와인 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Sticky ruby wine, raisins, and rich jammy plum juice" data-kor="붉은 포트 와인의 진득한 달콤함, 말린 건포도와 무화과 잼">붉은 포트 와인의 진득한 달콤함, 말린 건포도와 무화과 잼</p>
+                            </div>
                         </div>
                         <!-- Kavalan Solist Sherry -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Kavalan Solist Sherry (30ml)" data-kor="카발란 솔리스트 셰리 (30ml)">카발란 솔리스트 셰리 (30ml)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Kavalan Solist Sherry (30ml)" data-kor="카발란 솔리스트 셰리 (30ml)">카발란 솔리스트 셰리 (30ml)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Oloroso Sherry Single Cask CS] Chocolate, espresso, and dark plum synergy" data-kor="[올로로소 셰리 캐스크 CS] 셰리의 눅진한 베리류 터치와 에스프레소, 무거운 카카오 잔향">[올로로소 셰리 캐스크 CS] 셰리의 눅진한 베리류 터치와 에스프레소, 무거운 카카오 잔향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Oloroso Sherry CS" data-kor="올로로소 셰리 CS">올로로소 셰리 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Chocolate, espresso, and dark plum synergy" data-kor="셰리의 눅진한 베리류 터치와 에스프레소, 무거운 카카오 잔향">셰리의 눅진한 베리류 터치와 에스프레소, 무거운 카카오 잔향</p>
+                            </div>
                         </div>
                         <!-- Kavalan Solist Vinho -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Kavalan Solist Vinho Barrique (30ml)" data-kor="카발란 솔리스트 비노 바리끄 (30ml)">카발란 솔리스트 비노 바리끄 (30ml)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Kavalan Solist Vinho Barrique (30ml)" data-kor="카발란 솔리스트 비노 바리끄 (30ml)">카발란 솔리스트 비노 바리끄 (30ml)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">4.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">4.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[STR Red Wine Barrique CS] Sweet melon, vanilla, toasted wood, and wine notes" data-kor="[STR 와인 바리끄 CS] 바베큐 구이의 나무 향 뒤에 쏟아지는 화사한 멜론과 과일 단맛">[STR 와인 바리끄 CS] 바베큐 구이의 나무 향 뒤에 쏟아지는 화사한 멜론과 과일 단맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="STR Wine Barrique CS" data-kor="STR 와인 바리끄 CS">STR 와인 바리끄 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Sweet melon, vanilla, toasted wood, and wine notes" data-kor="바베큐 구이의 나무 향 뒤에 쏟아지는 화사한 멜론과 과일 단맛">바베큐 구이의 나무 향 뒤에 쏟아지는 화사한 멜론과 과일 단맛</p>
+                            </div>
                         </div>
 
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1" id="label-korean" data-eng="[ KOREAN WHISKY ]" data-kor="[ 한국 전통 주류 & 위스키 ]">[ 한국 전통 주류 & 위스키 ]</div>
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-korean" data-eng="[ KOREAN WHISKY ]" data-kor="[ 한국 전통 주류 & 위스키 ]">[ 한국 전통 주류 & 위스키 ]</div>
                         <!-- Hwayo XP -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Hwayo X.P (41%)" data-kor="화요 X.P (프리미엄 쌀 위스키) (41%)">화요 X.P (프리미엄 쌀 위스키) (41%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Hwayo X.P (41%)" data-kor="화요 X.P (프리미엄 쌀 위스키) (41%)">화요 X.P (프리미엄 쌀 위스키) (41%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[American Bourbon Oak] Hwayo rice spirit aged in oak, smooth vanilla and rice aroma" data-kor="[아메리칸 버번 오크통] 최고급 화요 원액을 오크통에 숙성, 포근하고 은은한 쌀과 바닐라">[아메리칸 버번 오크통] 최고급 화요 원액을 오크통에 숙성, 포근하고 은은한 쌀과 바닐라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="American Bourbon Oak" data-kor="아메리칸 버번 오크">아메리칸 버번 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Hwayo rice spirit aged in oak, smooth vanilla and rice aroma" data-kor="최고급 화요 원액을 오크 숙성, 포근하고 은은한 쌀과 바닐라">최고급 화요 원액을 오크 숙성, 포근하고 은은한 쌀과 바닐라</p>
+                            </div>
                         </div>
                         <!-- Ki One CS -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="KI ONE Batch 8 CS (56.8%)" data-kor="기원 Cask Strength Batch 8 (56.8%)">기원 Cask Strength Batch 8 (56.8%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="KI ONE Batch 8 CS (56.8%)" data-kor="기원 Cask Strength Batch 8 (56.8%)">기원 Cask Strength Batch 8 (56.8%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">2.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">2.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[PX Sherry Cask CS] Korea's first single malt distillery's hot PX sherry kick" data-kor="[PX 셰리 쿼터 캐스크 CS] 한국 최초 싱글몰트 증류소의 화끈한 PX 셰리 타격감과 달콤함">[PX 셰리 쿼터 캐스크 CS] 한국 최초 싱글몰트 증류소의 화끈한 PX 셰리 타격감과 달콤함</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="PX Sherry Quarter CS" data-kor="PX 셰리 쿼터 CS">PX 셰리 쿼터 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Korea's first single malt distillery's hot PX sherry kick" data-kor="한국 최초 싱글몰트 증류소의 화끈한 PX 셰리 타격감과 단맛">한국 최초 싱글몰트 증류소의 화끈한 PX 셰리 타격감과 단맛</p>
+                            </div>
                         </div>
 
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1" id="label-blended" data-eng="[ BLENDED ]" data-kor="[ 블렌디드 위스키 ]">[ 블렌디드 위스키 ]</div>
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-blended" data-eng="[ BLENDED ]" data-kor="[ 블렌디드 위스키 ]">[ 블렌디드 위스키 ]</div>
                         <!-- Monkey Shoulder -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Monkey Shoulder (40%)" data-kor="몽키 숄더 (40%)">몽키 숄더 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Monkey Shoulder (40%)" data-kor="몽키 숄더 (40%)">몽키 숄더 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.3</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.3</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[First-fill Bourbon Casks] The most approachable blended malt with smooth vanilla notes" data-kor="[퍼스트필 버번 캐스크 블렌디드] 가장 캐주얼하고 부담 없는 고소한 보리와 오렌지 바닐라">[퍼스트필 버번 캐스크 블렌디드] 가장 캐주얼하고 부담 없는 고소한 보리와 오렌지 바닐라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="1st-Fill Bourbon Blended" data-kor="퍼스트필 버번 블렌디드">퍼스트필 버번 블렌디드</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="The most approachable blended malt with smooth vanilla notes" data-kor="가장 캐주얼하고 부담 없는 고소한 보리와 오렌지 바닐라">가장 캐주얼하고 부담 없는 고소한 보리와 오렌지 바닐라</p>
+                            </div>
                         </div>
                         <!-- Maltman 25 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Maltman 25 YO (30ml) (42%)" data-kor="몰트맨 25년 (30ml) (42%)">몰트맨 25년 (30ml) (42%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Maltman 25 YO (30ml) (42%)" data-kor="몰트맨 25년 (30ml) (42%)">몰트맨 25년 (30ml) (42%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[25-Year Oak Cask] Ultimate smoothness and calm woody depth aged for 25 years" data-kor="[25년 숙성 오크 캐스크] 오랜 세월 독병 숙성이 주는 극상의 부드러움과 우디한 중후함">[25년 숙성 오크 캐스크] 오랜 세월 독병 숙성이 주는 극상의 부드러움과 우디한 중후함</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="25-Year Oak Cask" data-kor="25년 숙성 오크 캐스크">25년 숙성 오크 캐스크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Ultimate smoothness and calm woody depth aged for 25 years" data-kor="오랜 세월 독병 숙성이 주는 극상의 부드러움과 우디한 중후함">오랜 세월 독병 숙성이 주는 극상의 부드러움과 우디한 중후함</p>
+                            </div>
                         </div>
                         <!-- Suntory Kakubin -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Suntory Kakubin (Super Chilled) (40%)" data-kor="산토리 가쿠빈 (슈퍼 칠드) (40%)">산토리 가쿠빈 (슈퍼 칠드) (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Suntory Kakubin (Super Chilled) (40%)" data-kor="산토리 가쿠빈 (슈퍼 칠드) (40%)">산토리 가쿠빈 (슈퍼 칠드) (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.2</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.2</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Bourbon & Sherry Casks] Super chilled pour, the absolute king of crisp highballs" data-kor="[버번 & 셰리 배럴 블렌디드] 뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자">[버번 & 셰리 배럴 블렌디드] 뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Bourbon & Sherry Casks" data-kor="버번 & 셰리 배럴">버번 & 셰리 배럴</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Super chilled pour, the absolute king of crisp highballs" data-kor="뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자">뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ================= PAGE 7: BOURBON & ETC ================= -->
                 <div class="page-slide">
-                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-4 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-bourbon" data-eng="Bourbon & Others" data-kor="버번 & 기타 스피릿">버번 & 기타 스피릿</h3>
-                    <div class="space-y-2.5 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="bourbon-etc-list">
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-1 mb-1" id="label-bourbon" data-eng="[ BOURBON ]" data-kor="[ 아메리칸 버번 ]">[ 아메리칸 버번 ]</div>
+                    <h3 class="font-serif text-xs text-[#4a3428] font-bold tracking-wider mb-3 border-b border-[#b89047]/30 pb-1 uppercase flex-shrink-0" id="title-bourbon" data-eng="Bourbon & Others" data-kor="버번 & 기타 스피릿">버번 & 기타 스피릿</h3>
+                    <div class="space-y-2 overflow-y-auto no-scrollbar flex-1 pr-1 font-medium text-[#443126]" id="bourbon-etc-list">
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-0.5 mb-1" id="label-bourbon" data-eng="[ BOURBON ]" data-kor="[ 아메리칸 버번 ]">[ 아메리칸 버번 ]</div>
                         <!-- Weller 12 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Weller 12 YO (45%)" data-kor="웰러 12년 (45%)">웰러 12년 (45%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Weller 12 YO (45%)" data-kor="웰러 12년 (45%)">웰러 12년 (45%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New American Oak] Wheated bourbon, elegant and sweet butterscotch vanilla" data-kor="[신규 그을린 화이트 오크통] 밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라">[신규 그을린 화이트 오크통] 밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New American Oak" data-kor="신규 그을린 화이트 오크">신규 그을린 화이트 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Wheated bourbon, elegant and sweet butterscotch vanilla" data-kor="밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라">밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라</p>
+                            </div>
                         </div>
                         <!-- Makers Mark -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Maker's Mark (45%)" data-kor="메이커스 마크 (45%)">메이커스 마크 (45%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Maker's Mark (45%)" data-kor="메이커스 마크 (45%)">메이커스 마크 (45%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.2</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.2</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New American Oak] Wheated bourbon with an exceptionally smooth, sweet finish" data-kor="[신규 그을린 화이트 오크통] 부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석">[신규 그을린 화이트 오크통] 부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New American Oak" data-kor="신규 그을린 화이트 오크">신규 그을린 화이트 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Wheated bourbon with an exceptionally smooth, sweet finish" data-kor="부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석">부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석</p>
+                            </div>
                         </div>
                         <!-- Buffalo Trace -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Buffalo Trace (45%)" data-kor="버팔로 트레이스 (45%)">버팔로 트레이스 (45%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Buffalo Trace (45%)" data-kor="버팔로 트레이스 (45%)">버팔로 트레이스 (45%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.2</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.2</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New American Oak] The textbook caramel and vanilla, the gold standard of bourbon" data-kor="[신규 그을린 화이트 오크통] 캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서">[신규 그을린 화이트 오크통] 캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New American Oak" data-kor="신규 그을린 화이트 오크">신규 그을린 화이트 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="The textbook caramel and vanilla, the gold standard of bourbon" data-kor="캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서">캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서</p>
+                            </div>
                         </div>
                         <!-- Wild Turkey 101 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Wild Turkey 101 8 YO Bourbon (50.5%)" data-kor="와일드 터키 101 8년 (50.5%)">와일드 터키 101 8년 (50.5%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Wild Turkey 101 8 YO Bourbon (50.5%)" data-kor="와일드 터키 101 8년 (50.5%)">와일드 터키 101 8년 (50.5%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.3</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.3</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[No.4 Alligator Char Oak] Bold 50.5% ABV kick with toasted corn and nutty richness" data-kor="[엘리게이터 차 #4 오크통] 50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥">[엘리게이터 차 #4 오크통] 50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="No.4 Alligator Char Oak" data-kor="엘리게이터 차 #4 오크">엘리게이터 차 #4 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Bold 50.5% ABV kick with toasted corn and nutty richness" data-kor="50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥">50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥</p>
+                            </div>
                         </div>
                         <!-- Makers Mark CS -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Maker's Mark CS 25-03 (54.8%)" data-kor="메이커스 마크 CS 25-03 (54.8%)">메이커스 마크 CS 25-03 (54.8%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Maker's Mark CS 25-03 (54.8%)" data-kor="메이커스 마크 CS 25-03 (54.8%)">메이커스 마크 CS 25-03 (54.8%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.6</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.6</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New Oak Barrel Proof] Uncut wheated bourbon, heavy punch with deep caramel sweetness" data-kor="[신규 화이트 오크통 배럴프루프] 한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화">[신규 화이트 오크통 배럴프루프] 한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New Oak CS" data-kor="신규 화이트 오크 CS">신규 화이트 오크 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Uncut wheated bourbon, heavy punch with deep caramel sweetness" data-kor="한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화">한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화</p>
+                            </div>
                         </div>
                         <!-- Sagamore Rye -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Sagamore Spirit Signature Rye (41.5%)" data-kor="사가모어 스피릿 시그니처 라이 (41.5%)">사가모어 스피릿 시그니처 라이 (41.5%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Sagamore Spirit Signature Rye (41.5%)" data-kor="사가모어 스피릿 시그니처 라이 (41.5%)">사가모어 스피릿 시그니처 라이 (41.5%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New American Oak] Bright citrus, spicy mint, and herbal grass notes of rye" data-kor="[신규 화이트 오크통] 호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛">[신규 화이트 오크통] 호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New American Oak" data-kor="신규 화이트 오크">신규 화이트 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Bright citrus, spicy mint, and herbal grass notes of rye" data-kor="호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛">호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛</p>
+                            </div>
                         </div>
                         <!-- Wild Turkey Kentucky Spirit -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Wild Turkey Kentucky Spirit (TY-R) (50.5%)" data-kor="와일드 터키 켄터키 스피릿 (TY-R) (50.5%)">와일드 터키 켄터키 스피릿 (TY-R) (50.5%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Wild Turkey Kentucky Spirit (TY-R) (50.5%)" data-kor="와일드 터키 켄터키 스피릿 (TY-R) (50.5%)">와일드 터키 켄터키 스피릿 (TY-R) (50.5%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Single Barrel No.4 Char Oak] Premium single barrel selection with signature kick" data-kor="[단독 선별 배럴 오크통] 엄선한 단 하나의 오크통에서만 담아낸 명품 바닐라와 고소함의 최고조">[단독 선별 배럴 오크통] 엄선한 단 하나의 오크통에서만 담아낸 명품 바닐라와 고소함의 최고조</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Single Barrel No.4 Char Oak" data-kor="단독 선별 배럴 오크통">단독 선별 배럴 오크통</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Premium single barrel selection with signature kick" data-kor="엄선한 단 하나의 오크통에서만 담아낸 명품 바닐라와 고소함의 최고조">엄선한 단 하나의 오크통에서만 담아낸 명품 바닐라와 고소함의 최고조</p>
+                            </div>
                         </div>
                         <!-- Knob Creek -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Knob Creek 9 YO (50%)" data-kor="놉 크릭 9년 (50%)">놉 크릭 9년 (50%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Knob Creek 9 YO (50%)" data-kor="놉 크릭 9년 (50%)">놉 크릭 9년 (50%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.8</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.8</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Maximum Charred New Oak 9y] Robust oak char, rich leather, and dark maple syrup notes" data-kor="[최대 태운 신규 화이트 오크 9년] 거친 참나무 숯 향, 묵직하고 마초적인 다크 캐러멜">[최대 태운 신규 화이트 오크 9년] 거친 참나무 숯 향, 묵직하고 마초적인 다크 캐러멜</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Maximum Charred Oak 9y" data-kor="최대 태운 신규 오크 9년">최대 태운 신규 오크 9년</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Robust oak char, rich leather, and dark maple syrup notes" data-kor="거친 참나무 숯 향, 묵직하고 마초적인 다크 캐러멜">거친 참나무 숯 향, 묵직하고 마초적인 다크 캐러멜</p>
+                            </div>
                         </div>
                         <!-- Russells Single Barrel -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Russell's Reserve Single Barrel (55%)" data-kor="러셀 리저브 싱글 배럴 (55%)">러셀 리저브 싱글 배럴 (55%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Russell's Reserve Single Barrel (55%)" data-kor="러셀 리저브 싱글 배럴 (55%)">러셀 리저브 싱글 배럴 (55%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.9</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.9</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Heavy No.4 Char Single Barrel] The eternal favorite, rich proof vanilla with cinnamon spice" data-kor="[헤비 차 #4 오크통 싱글배럴] 버번 마니아들의 영원한 원픽, 시나몬이 섞인 진한 고도수 바닐라">[헤비 차 #4 오크통 싱글배럴] 버번 마니아들의 영원한 원픽, 시나몬이 섞인 진한 고도수 바닐라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Heavy No.4 Char Single Barrel" data-kor="헤비 차 #4 싱글배럴">헤비 차 #4 싱글배럴</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="The eternal favorite, rich proof vanilla with cinnamon spice" data-kor="버번 마니아들의 영원한 원픽, 시나몬이 섞인 진한 고도수 바닐라">버번 마니아들의 영원한 원픽, 시나몬이 섞인 진한 고도수 바닐라</p>
+                            </div>
                         </div>
                         <!-- Bookers 2025 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Booker's 2025-01E (30ml) (63.2%)" data-kor="부커스 2025-01E (30ml) (63.2%)">부커스 2025-01E (30ml) (63.2%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Booker's 2025-01E (30ml) (63.2%)" data-kor="부커스 2025-01E (30ml) (63.2%)">부커스 2025-01E (30ml) (63.2%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New Oak Barrel Proof] Violently intense 63% punch followed by sweet cinnamon caramel" data-kor="[신규 화이트 오크통 배럴프루프] 63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향">[신규 화이트 오크통 배럴프루프] 63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New Oak CS" data-kor="신규 화이트 오크 CS">신규 화이트 오크 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Violently intense 63% punch followed by sweet cinnamon caramel" data-kor="63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향">63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향</p>
+                            </div>
                         </div>
                         <!-- Bookers 2026 -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Booker's 2026-01E (30ml)" data-kor="부커스 2026-01E (30ml)">부커스 2026-01E (30ml)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Booker's 2026-01E (30ml)" data-kor="부커스 2026-01E (30ml)">부커스 2026-01E (30ml)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.0</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.0</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Charred New Oak Barrel Proof] Uncut unfiltered cask strength bourbon with deep vanilla oak" data-kor="[신규 화이트 오크통 배럴프루프] 물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향">[신규 화이트 오크통 배럴프루프] 물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Charred New Oak CS" data-kor="신규 화이트 오크 CS">신규 화이트 오크 CS</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Uncut unfiltered cask strength bourbon with deep vanilla oak" data-kor="물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향">물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향</p>
+                            </div>
                         </div>
                         
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1" id="label-tequila" data-eng="[ TEQUILA ]" data-kor="[ 데킬라 ]">[ 데킬라 ]</div>
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-tequila" data-eng="[ TEQUILA ]" data-kor="[ 데킬라 ]">[ 데킬라 ]</div>
                         <!-- Tequila Shot -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Tequila Shot (40%)" data-kor="데킬라 샷 (40%)">데킬라 샷 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Tequila Shot (40%)" data-kor="데킬라 샷 (40%)">데킬라 샷 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">0.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">0.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Blanco Agave] Crisp agave shot to be enjoyed with salt and lemon" data-kor="[블랑코 아가베] 소금, 레몬과 함께 기분 전환용으로 원샷하기 좋은 짜릿함">[블랑코 아가베] 소금, 레몬과 함께 기분 전환용으로 원샷하기 좋은 짜릿함</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Blanco Agave" data-kor="블랑코 아가베">블랑코 아가베</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Crisp agave shot to be enjoyed with salt and lemon" data-kor="소금, 레몬과 함께 기분 전환용으로 원샷하기 좋은 짜릿함">소금, 레몬과 함께 기분 전환용으로 원샷하기 좋은 짜릿함</p>
+                            </div>
                         </div>
                         <!-- Jose Cuervo -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Jose Cuervo Especial (40%)" data-kor="호세 쿠엘보 에스페셜 (40%)">호세 쿠엘보 에스페셜 (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Jose Cuervo Especial (40%)" data-kor="호세 쿠엘보 에스페셜 (40%)">호세 쿠엘보 에스페셜 (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">0.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">0.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Oak Rested] The most familiar gold tequila to boost the party spirit" data-kor="[화이트 오크통 단기 숙성] 파티의 텐션을 단숨에 올려줄 가볍고 친근한 단맛의 골드 데킬라">[화이트 오크통 단기 숙성] 파티의 텐션을 단숨에 올려줄 가볍고 친근한 단맛의 골드 데킬라</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Oak Rested Gold" data-kor="화이트 오크 단기 숙성">화이트 오크 단기 숙성</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="The most familiar gold tequila to boost the party spirit" data-kor="파티의 텐션을 단숨에 올려줄 가볍고 친근한 단맛의 골드 데킬라">파티의 텐션을 단숨에 올려줄 가볍고 친근한 단맛의 골드 데킬라</p>
+                            </div>
                         </div>
                         
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1" id="label-cognac" data-eng="[ COGNAC ]" data-kor="[ 브랜디 & 꼬냑 ]">[ 브랜디 & 꼬냑 ]</div>
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-cognac" data-eng="[ COGNAC ]" data-kor="[ 브랜디 & 꼬냑 ]">[ 브랜디 & 꼬냑 ]</div>
                         <!-- Hennessy VSOP -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Hennessy VSOP (40%)" data-kor="헤네시 V.S.O.P (40%)">Hennessy VSOP (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Hennessy VSOP (40%)" data-kor="헤네시 V.S.O.P (40%)">Hennessy VSOP (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.6</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.6</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[French Oak Cask Blend] Sweet grape aroma and soft floral notes of classic cognac" data-kor="[프렌치 오크통 60여종 블렌딩] 화사하고 산뜻하며 향긋한 청포도와 가벼운 오크향">[프렌치 오크통 60여종 블렌딩] 화사하고 산뜻하며 향긋한 청포도와 가벼운 오크향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="French Oak Cask Blend" data-kor="프렌치 오크 블렌딩">프렌치 오크 블렌딩</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Sweet grape aroma and soft floral notes of classic cognac" data-kor="화사하고 산뜻하며 향긋한 청포도와 가벼운 오크향">화사하고 산뜻하며 향긋한 청포도와 가벼운 오크향</p>
+                            </div>
                         </div>
                         <!-- Remy Martin VSOP -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Remy martin VSOP (40%)" data-kor="레미 마틴 V.S.O.P (40%)">Remy martin VSOP (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Remy martin VSOP (40%)" data-kor="레미 마틴 V.S.O.P (40%)">Remy martin VSOP (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.7</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.7</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[French Limousin Oak] Rich cognac with vanilla and ripe wild fig profiles" data-kor="[프렌치 리무쟁 오크 피느 샹파뉴] 부드러운 바닐라 바디감 뒤에 이어지는 야생 무화과와 묵직한 포도맛">[프렌치 리무쟁 오크 피느 샹파뉴] 부드러운 바닐라 바디감 뒤에 이어지는 야생 무화과와 묵직한 포도맛</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="French Limousin Oak" data-kor="프렌치 리무쟁 오크">프렌치 리무쟁 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Rich cognac with vanilla and ripe wild fig profiles" data-kor="부드러운 바닐라 바디감 뒤에 이어지는 야생 무화과와 묵직한 포도맛">부드러운 바닐라 바디감 뒤에 이어지는 야생 무화과와 묵직한 포도맛</p>
+                            </div>
                         </div>
                         <!-- Hennessy XO -->
-                        <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Hennessy XO (30ml) (40%)" data-kor="헤네시 X.O (30ml) (40%)">헤네시 X.O (30ml) (40%)</span>
+                        <div class="menu-item flex flex-col pb-1.5 border-b border-[#b89047]/10">
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Hennessy XO (30ml) (40%)" data-kor="헤네시 X.O (30ml) (40%)">헤네시 X.O (30ml) (40%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">3.5</span>
+                                <span class="text-[#4a3428] font-bold text-xs">3.5</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="[Aged French Limousin Oak] Long-aged ultra-premium cognac with deep spicy oak complexity" data-kor="[고숙성 프렌치 오크 에이지드] 오랜 세월 우아하게 정제된 포도의 진액, 품격 있는 리치한 잔향">[고숙성 프렌치 오크 에이지드] 오랜 세월 우아하게 정제된 포도의 진액, 품격 있는 리치한 잔향</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Aged French Limousin" data-kor="고숙성 프렌치 오크">고숙성 프렌치 오크</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Long-aged ultra-premium cognac with deep spicy oak complexity" data-kor="오랜 세월 우아하게 정제된 포도의 진액, 품격 있는 리치한 잔향">오랜 세월 우아하게 정제된 포도의 진액, 품격 있는 리치한 잔향</p>
+                            </div>
                         </div>
 
-                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-3 mb-1" id="label-beer" data-eng="[ BEER ]" data-kor="[ 맥주 ]">[ 맥주 ]</div>
+                        <div class="text-[9px] font-bold text-[#6b4f3e] uppercase tracking-widest mt-2 mb-1" id="label-beer" data-eng="[ BEER ]" data-kor="[ 맥주 ]">[ 맥주 ]</div>
                         <!-- Guinness -->
                         <div class="menu-item flex flex-col pb-1">
-                            <div class="flex items-end justify-between text-[11px] w-full">
-                                <span data-eng="Guinness Draft Beer (4.2%)" data-kor="기네스 생맥주 (4.2%)">기네스 생맥주 (4.2%)</span>
+                            <div class="flex items-end justify-between text-xs font-bold w-full">
+                                <span class="text-[#2b1e16]" data-eng="Guinness Draft Beer (4.2%)" data-kor="기네스 생맥주 (4.2%)">기네스 생맥주 (4.2%)</span>
                                 <span class="dots-leader"></span>
-                                <span class="text-[#4a3428] font-bold">1.2</span>
+                                <span class="text-[#4a3428] font-bold text-xs">1.2</span>
                             </div>
-                            <p class="text-[8.5px] text-[#8d7c73] mt-0.5" data-eng="- Velvet-smooth creamy head and classic dark roasted stout bitterness" data-kor="- 실크처럼 부드러운 크림 거품 아래 숨은 쌉쌀하고 구수한 카카오 풍미의 흑맥주">- 실크처럼 부드러운 크림 거품 아래 숨은 쌉쌀하고 구수한 카카오 풍미의 흑맥주</p>
+                            <div class="flex items-start gap-1.5 mt-1">
+                                <span class="cask-badge mt-0.5" data-eng="Irish Stout Draft" data-kor="아일랜드 흑맥주">아일랜드 흑맥주</span>
+                                <p class="text-[9.5px] text-[#523d32] font-medium leading-snug flex-1" data-eng="Velvet-smooth creamy head and classic dark roasted stout bitterness" data-kor="실크처럼 부드러운 크림 거품 아래 숨은 쌉쌀하고 구수한 카카오 풍미">실크처럼 부드러운 크림 거품 아래 숨은 쌉쌀하고 구수한 카카오 풍미</p>
+                            </div>
                         </div>
                     </div>
                 </div>
