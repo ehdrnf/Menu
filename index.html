@@ -76,16 +76,6 @@
             cursor: default !important;
         }
 
-        /* Dailyshot link hover/active cue on whisky names */
-        .whisky-link {
-            cursor: pointer;
-            transition: color 0.15s ease;
-        }
-        .whisky-link:hover {
-            text-decoration: underline;
-            text-decoration-color: #c5a059;
-            text-underline-offset: 4px;
-        }
 
         /* Ensure all menu descriptions wrap comfortably without truncation */
         .menu-item p, .menu-card p {
@@ -162,13 +152,12 @@
                 
                 <div class="flex items-center justify-between mb-3 border-b border-[#332620] pb-2.5">
                     <span class="text-xs font-bold tracking-widest text-[#c5a059] uppercase font-brand" data-kor="[ STANDARD GUIDE ]" data-eng="[ STANDARD GUIDE ]">[ STANDARD GUIDE ]</span>
-                    <span class="text-[11px] px-2 py-0.5 rounded bg-[#c5a059]/15 text-[#c5a059] font-semibold" data-kor="40ml 정량 푸어링" data-eng="40ml Standard Pour">40ml 정량 푸어링</span>
                 </div>
 
                 <div class="space-y-2 text-xs text-[#cfc7be] leading-relaxed">
                     <p class="flex items-start">
                         <span class="text-[#c5a059] mr-2">∙</span>
-                        <span data-kor="모든 위스키는 <strong>40ml 정량(Standard Pour)</strong>으로 넉넉하게 서브됩니다." data-eng="All whiskies are served in a generous <strong>40ml Standard Pour</strong>.">모든 위스키는 <strong>40ml 정량(Standard Pour)</strong>으로 넉넉하게 서브됩니다.</span>
+                        <span data-kor="모든 위스키 <strong>40ml</strong> 서브 <span class='text-zinc-500 text-[11px]'>(일부 제외)</span>" data-eng="All whiskies served in <strong>40ml</strong> pours <span class='text-zinc-500 text-[11px]'>(some exceptions apply)</span>">모든 위스키 <strong>40ml</strong> 서브 <span class='text-zinc-500 text-[11px]'>(일부 제외)</span></span>
                     </p>
                     <p class="flex items-start">
                         <span class="text-[#c5a059] mr-2">∙</span>
@@ -197,10 +186,6 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400" data-kor="각 15ml × 3잔" data-eng="15ml each × 3 glasses">각 15ml × 3잔</span>
             </div>
-            <p class="text-xs text-zinc-400 mb-3 leading-relaxed font-gowun break-keep" data-kor="어떤 잔을 마실지 고민될 때 가장 안전하고 기분 좋게 즐기는 추천 코스입니다. 원하는 구성이 없을 땐 바텐더에게 말씀해 주시면 맞춤 구성해 드립니다." data-eng="Curated tasting sets to discover your favorite profile. Ask our staff for custom flights.">
-                어떤 잔을 마실지 고민될 때 가장 안전하고 기분 좋게 즐기는 추천 코스입니다. 원하는 구성이 없을 땐 바텐더에게 말씀해 주시면 맞춤 구성해 드립니다.
-            </p>
-
             <div class="space-y-3" id="flight-list">
                 <!-- Course A -->
                 <div class="menu-card bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/40 rounded-xl p-3.5 transition-all">
@@ -281,7 +266,7 @@
                             <span class="text-[10px] font-bold uppercase tracking-wider text-black bg-[#c5a059] px-2 py-0.5 rounded-full mr-1.5">Special</span>
                             <h3 class="text-sm font-bold text-[#dfbe7e] inline leading-snug" data-kor="부커스 2종 버티컬 비교 코스" data-eng="Booker's Batch Comparison Flight">부커스 2종 버티컬 비교 코스</h3>
                         </div>
-                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">5.0</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">4.0</span>
                     </div>
                     <p class="text-xs text-zinc-200 leading-relaxed mb-2 font-sans break-keep" data-kor="부커스 2025-01E (15ml) + 부커스 2026-01E (15ml)" data-eng="Booker's 2025-01E + Booker's 2026-01E">
                         부커스 2025-01E (15ml) + 부커스 2026-01E (15ml)
@@ -384,7 +369,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="솔레라 바트" data-eng="Solera Vat">솔레라 바트</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="솔레라 벗" data-eng="Solera Vat">솔레라 벗</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="솔레라 방식으로 완성한 꿀과 농축된 서양배" data-eng="Solera-aged honey and rich pear">솔레라 방식으로 완성한 꿀과 농축된 서양배</p>
                 </div>
@@ -525,6 +510,18 @@
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="포트 와인통이 선사하는 진한 다크 초콜릿과 박하향" data-eng="Dark chocolate and fresh mint from port cask">포트 와인통이 선사하는 진한 다크 초콜릿과 박하향</p>
                 </div>
 
+                <!-- Glenmorangie Signet -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="글렌모렌지 시그넷 (46%)" data-eng="Glenmorangie Signet (46%)">글렌모렌지 시그넷 (46%)</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">3.5</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="초콜릿 몰트 & 캐스크 혼합" data-eng="Chocolate Malt & Mixed Casks">초콜릿 몰트 & 캐스크 혼합</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="초콜릿 몰트가 만들어내는 진한 에스프레소와 다크 초콜릿의 깊은 풍미" data-eng="Chocolate malt-driven espresso and dark chocolate richness">초콜릿 몰트가 만들어내는 진한 에스프레소와 다크 초콜릿의 깊은 풍미</p>
+                </div>
+
                 <!-- GlenDronach 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -623,6 +620,33 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연" data-eng="19yo depth with heather honey, spices & smoke">19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연</p>
                 </div>
+
+                <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ LOWLANDS ]</div>
+                <!-- Signatory Auchentoshan 13 Amontillado -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="시그나토리 오켄토션 2013/2026 13년" data-eng="Signatory Auchentoshan 2013/2026 13 YO">시그나토리 오켄토션 2013/2026 13년</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="퍼스트필 아몬티야도 셰리 피니시" data-eng="1st Fill Amontillado Sherry Finish">퍼스트필 아몬티야도 셰리 피니시</span>
+                        <span class="cask-badge bg-[#c5a059]/15 text-[#dfbe7e] border border-[#c5a059]/50" data-kor="독립병입" data-eng="Independent Bottling">독립병입</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="로우랜드 특유의 가볍고 부드러운 질감에 아몬티야도 캐스크의 은은한 너트향과 드라이함" data-eng="Light Lowland malt finished with nutty, dry amontillado sherry">로우랜드 특유의 가볍고 부드러운 질감에 아몬티야도 캐스크의 은은한 너트향과 드라이함</p>
+                </div>
+
+                <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ CAMPBELTOWN ]</div>
+                <!-- Glen Scotia 7 Campbeltown Malt Festival 2026 -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="글렌 스코샤 7년 캠벨타운 몰트 페스티벌 2026" data-eng="Glen Scotia 7 YO Campbeltown Malt Festival 2026">글렌 스코샤 7년 캠벨타운 몰트 페스티벌 2026</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#c5a059]/15 text-[#dfbe7e] border border-[#c5a059]/50" data-kor="페스티벌 한정판" data-eng="Festival Limited Edition">페스티벌 한정판</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="캠벨타운 몰트 페스티벌을 위해 병입된 희소한 한정판, 짭짤한 바다 내음과 가벼운 왁스 질감" data-eng="Rare festival-only bottling with salty brine and light wax texture">캠벨타운 몰트 페스티벌을 위해 병입된 희소한 한정판, 짭짤한 바다 내음과 가벼운 왁스 질감</p>
+                </div>
             </div>
         </section>
 
@@ -707,6 +731,31 @@
                         <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="올로로소 셰리 피니시" data-eng="Oloroso Sherry Finish">올로로소 셰리 피니시</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리" data-eng="Medicinal peat smoke intertwined with rich sherry sweetness">정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리</p>
+                </div>
+
+                <!-- Laphroaig 12 -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="라프로익 12년" data-eng="Laphroaig 12 YO">라프로익 12년</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="버번 배럴" data-eng="Ex-Bourbon Barrels">버번 배럴</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="10년보다 한층 더 깊어진 피트와 짭짤한 바다 내음의 균형감" data-eng="Deeper peat and briny balance than the 10 YO">10년보다 한층 더 깊어진 피트와 짭짤한 바다 내음의 균형감</p>
+                </div>
+
+                <!-- Laphroaig 15 -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="라프로익 15년" data-eng="Laphroaig 15 YO">라프로익 15년</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.2</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="엑스버번 (아메리칸 오크)" data-eng="Ex American Oak">엑스버번 (아메리칸 오크)</span>
+                        <span class="cask-badge bg-[#c5a059]/15 text-[#dfbe7e] border border-[#c5a059]/50" data-kor="10년만의 귀환" data-eng="Back After 10 Years">10년만의 귀환</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="오렌지 제스트와 자몽, 긴 숙성이 주는 풍성하고 둥근 스모크 피니시" data-eng="Orange zest and grapefruit, a fuller rounded smoky finish">오렌지 제스트와 자몽, 긴 숙성이 주는 풍성하고 둥근 스모크 피니시</p>
                 </div>
 
                 <!-- Laphroaig 10 CS Batch 16 -->
@@ -929,6 +978,32 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자" data-eng="Super chilled pour, absolute king of crisp highballs">뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자</p>
                 </div>
+
+                <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ FRANCE - MICHEL COUVREUR ]</div>
+                <!-- Michel Couvreur Overaged Malt Whisky -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="미쉘 쿠브뢰 오버에이지드 몰트 위스키" data-eng="Michel Couvreur Overaged Malt Whisky">미쉘 쿠브뢰 오버에이지드 몰트 위스키</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="부르고뉴 셰리 오크 캐스크" data-eng="Burgundy Sherry Oak Casks">부르고뉴 셰리 오크 캐스크</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="여러 올드 위스키를 블렌딩해 부르고뉴 셀러의 셰리 캐스크에서 추가 숙성한 진하고 깊은 단맛" data-eng="Old malts re-matured in Burgundy sherry casks, rich deep sweetness">여러 올드 위스키를 블렌딩해 부르고뉴 셀러의 셰리 캐스크에서 추가 숙성한 진하고 깊은 단맛</p>
+                </div>
+
+                <!-- Michel Couvreur Intravagan'za -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="미쉘 쿠브뢰 인트라바간자 (51%)" data-eng="Michel Couvreur Intravagan'za (51%)">미쉘 쿠브뢰 인트라바간자 (51%)</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="모스카텔 70% & 올로로소 30%" data-eng="Moscatel 70% & Oloroso 30%">모스카텔 70% & 올로로소 30%</span>
+                        <span class="cask-badge bg-[#c5a059]/15 text-[#dfbe7e] border border-[#c5a059]/50" data-kor="한국 독점" data-eng="South Korea Exclusive">한국 독점</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="한국 독점 보틀, 모스카텔 주정강화 와인 캐스크가 남긴 화사하고 달콤한 캐스크 스트렝스" data-eng="Korea-exclusive cask strength bottling finished in Moscatel fortified wine casks">한국 독점 보틀, 모스카텔 주정강화 와인 캐스크가 남긴 화사하고 달콤한 캐스크 스트렝스</p>
+                </div>
             </div>
         </section>
 
@@ -948,10 +1023,10 @@
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
                         <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="웰러 12년 (45%)" data-eng="Weller 12 YO (45%)">웰러 12년 (45%)</span>
-                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">3.5</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">3.0</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크" data-eng="Charred New American Oak">신규 화이트 오크</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="밀 매쉬빌 오크" data-eng="Wheat Mash Bill Oak">밀 매쉬빌 오크</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라" data-eng="Wheated bourbon, elegant sweet butterscotch vanilla">밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라</p>
                 </div>
@@ -963,7 +1038,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.2</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크" data-eng="Charred New American Oak">신규 화이트 오크</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="레드 윈터 밀 오크" data-eng="Red Winter Wheat Oak">레드 윈터 밀 오크</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석" data-eng="Wheated bourbon with smooth sweet finish">부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석</p>
                 </div>
@@ -975,7 +1050,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.2</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크" data-eng="Charred New American Oak">신규 화이트 오크</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="로우라이 매쉬빌 오크" data-eng="Low-Rye Mash Bill Oak">로우라이 매쉬빌 오크</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서" data-eng="Textbook caramel and vanilla, standard of bourbon">캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서</p>
                 </div>
@@ -992,6 +1067,18 @@
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥" data-eng="Bold 50.5% kick with toasted corn and nutty richness">50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥</p>
                 </div>
 
+                <!-- Wild Turkey Rare Breed -->
+                <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
+                    <div class="flex items-start justify-between gap-2 mb-1.5">
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="와일드 터키 레어브리드" data-eng="Wild Turkey Rare Breed">와일드 터키 레어브리드</span>
+                        <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.6</span>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="배럴 프루프 CS" data-eng="Barrel Proof CS">배럴 프루프 CS</span>
+                    </div>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="무가수 배럴 프루프의 진한 캐러멜과 오크, 길게 이어지는 스파이시 피니시" data-eng="Uncut barrel proof with rich caramel, oak, and a long spicy finish">무가수 배럴 프루프의 진한 캐러멜과 오크, 길게 이어지는 스파이시 피니시</p>
+                </div>
+
                 <!-- Maker's Mark CS -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -999,7 +1086,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.6</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크 CS" data-eng="Charred New Oak CS">신규 화이트 오크 CS</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="레드 윈터 밀 오크 CS" data-eng="Red Winter Wheat Oak CS">레드 윈터 밀 오크 CS</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화" data-eng="Uncut wheated bourbon, deep caramel sweetness">한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화</p>
                 </div>
@@ -1011,7 +1098,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.7</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크" data-eng="Charred New American Oak">신규 화이트 오크</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="라이 매쉬빌 오크" data-eng="Rye Mash Bill Oak">라이 매쉬빌 오크</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛" data-eng="Bright citrus, spicy mint, and herbal rye grass">호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛</p>
                 </div>
@@ -1059,7 +1146,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">3.0</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크 CS" data-eng="Charred New Oak CS">신규 화이트 오크 CS</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="언컷 배럴 프루프 오크" data-eng="Uncut Barrel Proof Oak">언컷 배럴 프루프 오크</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향" data-eng="Violent 63% punch followed by sweet cacao caramel">63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향</p>
                 </div>
@@ -1071,9 +1158,20 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">3.0</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="신규 화이트 오크 CS" data-eng="Charred New Oak CS">신규 화이트 오크 CS</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="언컷 배럴 프루프 오크" data-eng="Uncut Barrel Proof Oak">언컷 배럴 프루프 오크</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향" data-eng="Uncut cask strength bourbon with deep vanilla oak">물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향</p>
+                </div>
+
+                <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ GIN ]</div>
+                <div class="grid grid-cols-2 gap-2.5">
+                    <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3">
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-xs font-bold text-white" data-kor="제스트 진" data-eng="Zest Gin (Neat)">제스트 진</span>
+                            <span class="text-xs font-bold text-[#dfbe7e]">1.8</span>
+                        </div>
+                        <p class="text-[11px] text-zinc-400 break-keep" data-kor="탄산 없이 그대로, 신선한 시트러스 제스트의 향을 온전히" data-eng="Neat pour, pure fresh citrus zest aroma">탄산 없이 그대로, 신선한 시트러스 제스트의 향을 온전히</p>
+                    </div>
                 </div>
 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ TEQUILA ]</div>
@@ -1522,25 +1620,6 @@
                 location.reload(); // Clean reset to default state
             }
         }
-
-        // Dailyshot Smart Click Bridge (Whiskies only, excludes badges, cocktails, wine)
-        document.addEventListener('click', function(e) {
-            // Exclude badges, cocktails, flights, or search input
-            if (e.target.closest('.cask-badge') || e.target.closest('#sec-cocktail-classic') || e.target.closest('#sec-cocktail-casual') || e.target.closest('#sec-flight')) {
-                return;
-            }
-
-            const link = e.target.closest('.whisky-link');
-            if (link) {
-                let rawQuery = currentLang === 'ko' ? link.getAttribute('data-kor') : link.getAttribute('data-eng');
-                if (!rawQuery) rawQuery = link.textContent;
-                // Strip ABV info like (40%), (58.4%) for accurate Dailyshot query
-                let query = rawQuery.replace(/\s*\(\d+(\.\d+)?%\)/g, '').trim();
-                if (query) {
-                    window.open(`https://dailyshot.co/m/search/result?q=${encodeURIComponent(query)}`, '_blank');
-                }
-            }
-        });
 
         // Initialize defaults
         window.addEventListener('DOMContentLoaded', () => {
