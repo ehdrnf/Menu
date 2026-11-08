@@ -1,3 +1,25 @@
+Claude
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Index (6) · HTML
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -35,17 +57,17 @@
             word-break: keep-all;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
+ 
         .font-brand {
             font-family: 'Playfair Display', Georgia, serif;
         }
         .font-gowun {
             font-family: 'Gowun Batang', Georgia, serif;
         }
-
+ 
         .no-scrollbar::-webkit-scrollbar { display: none; }
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
+ 
         /* Smooth scroll-behavior with offset for sticky header */
         html {
             scroll-behavior: smooth;
@@ -53,13 +75,13 @@
         .menu-section {
             scroll-margin-top: 130px;
         }
-
+ 
         /* Subtle interactive tap feedback */
         .tap-highlight:active {
             opacity: 0.75;
             transform: scale(0.99);
         }
-
+ 
         /* Cask badge styling: High readability, distinct boundary */
         .cask-badge {
             display: inline-flex;
@@ -75,8 +97,8 @@
             user-select: none;
             cursor: default !important;
         }
-
-
+ 
+ 
         /* Ensure all menu descriptions wrap comfortably without truncation */
         .menu-item p, .menu-card p {
             white-space: normal !important;
@@ -87,7 +109,7 @@
     </style>
 </head>
 <body class="bg-[#110d0b] text-[#ede7df] min-h-screen pb-24 selection:bg-[#c5a059]/30">
-
+ 
     <!-- Top Sticky Header Container (Brand + Controls + Category Pills) -->
     <header class="sticky top-0 z-40 bg-[#110d0b]/95 backdrop-blur-md border-b border-[#2e221d] transition-colors duration-300">
         <div class="max-w-md mx-auto px-4 pt-3 pb-2">
@@ -105,7 +127,7 @@
                         <button id="btn-ko" onclick="setLanguage('ko')" class="px-2.5 py-1 text-[11px] font-bold rounded-full bg-[#c5a059] text-[#110d0b] transition-all">한글</button>
                         <button id="btn-en" onclick="setLanguage('en')" class="px-2.5 py-1 text-[11px] font-bold rounded-full text-zinc-400 hover:text-white transition-all">ENG</button>
                     </div>
-
+ 
                     <!-- Theme Toggle (Dark Amber vs Antique Paper) -->
                     <button onclick="toggleTheme()" id="btn-theme" class="p-1.5 rounded-full bg-[#1c1513] border border-[#332620] text-zinc-300 hover:text-[#c5a059] transition-all" title="테마 변경">
                         <svg id="icon-sun" class="w-4 h-4 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -117,7 +139,7 @@
                     </button>
                 </div>
             </div>
-
+ 
             <!-- Instant Search Input (Find drinks in 1 sec) -->
             <div class="relative mb-2">
                 <input type="text" id="menu-search" oninput="handleSearch(this.value)" placeholder="주류 검색 (예: 라프로익, 셰리, 갓파더, 발베니...)" 
@@ -141,10 +163,10 @@
             </nav>
         </div>
     </header>
-
+ 
     <!-- Main Content Container (Fluid Vertical Flow) -->
     <main class="max-w-md mx-auto px-4 pt-4 space-y-8">
-
+ 
         <!-- ================= 1. STANDARD GUIDE ================= -->
         <section id="sec-guide" class="menu-section">
             <div class="bg-gradient-to-br from-[#1a1412] to-[#140f0e] border border-[#c5a059]/30 rounded-2xl p-5 shadow-lg relative overflow-hidden">
@@ -153,7 +175,7 @@
                 <div class="flex items-center justify-between mb-3 border-b border-[#332620] pb-2.5">
                     <span class="text-xs font-bold tracking-widest text-[#c5a059] uppercase font-brand" data-kor="[ STANDARD GUIDE ]" data-eng="[ STANDARD GUIDE ]">[ STANDARD GUIDE ]</span>
                 </div>
-
+ 
                 <div class="space-y-2 text-xs text-[#cfc7be] leading-relaxed">
                     <p class="flex items-start">
                         <span class="text-[#c5a059] mr-2">∙</span>
@@ -176,7 +198,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 2. TASTING FLIGHTS ================= -->
         <section id="sec-flight" class="menu-section">
             <div class="flex items-baseline justify-between mb-2">
@@ -204,7 +226,7 @@
                         <span class="px-2 py-0.5 bg-emerald-950/60 text-emerald-400 rounded text-[10px] font-semibold shrink-0" data-kor="초보자" data-eng="Beginner">초보자</span>
                     </div>
                 </div>
-
+ 
                 <!-- Course B -->
                 <div class="menu-card bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/40 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -214,15 +236,15 @@
                         </div>
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.8</span>
                     </div>
-                    <p class="text-xs text-zinc-300 leading-relaxed mb-2 font-sans break-keep" data-kor="버팔로 트레이스 (45%) + 사가모어 시그니처 라이 (41.5%) + 러셀 리저브 싱글 배럴 (55%)" data-eng="Buffalo Trace + Sagamore Rye + Russell's Reserve SB">
-                        버팔로 트레이스 (45%) + 사가모어 시그니처 라이 (41.5%) + 러셀 리저브 싱글 배럴 (55%)
+                    <p class="text-xs text-zinc-300 leading-relaxed mb-2 font-sans break-keep" data-kor="버팔로 트레이스 (45%) + 리튼하우스 라이 (50%) + 러셀 리저브 싱글 배럴 (55%)" data-eng="Buffalo Trace + Rittenhouse Rye + Russell's Reserve SB">
+                        버팔로 트레이스 (45%) + 리튼하우스 라이 (50%) + 러셀 리저브 싱글 배럴 (55%)
                     </p>
                     <div class="flex flex-wrap items-center justify-between gap-1.5 text-[11px] text-zinc-400">
-                        <span class="leading-relaxed break-keep" data-kor="부드러운 정석 버번 ➔ 알싸한 민트 호밀 ➔ 55도 헤비 바닐라" data-eng="Classic smooth bourbon ➔ spicy mint rye ➔ heavy 55% vanilla">부드러운 정석 버번 ➔ 알싸한 민트 호밀 ➔ 55도 헤비 바닐라</span>
+                        <span class="leading-relaxed break-keep" data-kor="부드러운 정석 버번 ➔ 알싸한 시나몬 호밀 ➔ 55도 헤비 바닐라" data-eng="Classic smooth bourbon ➔ spicy cinnamon rye ➔ heavy 55% vanilla">부드러운 정석 버번 ➔ 알싸한 시나몬 호밀 ➔ 55도 헤비 바닐라</span>
                         <span class="px-2 py-0.5 bg-amber-950/60 text-[#dfbe7e] rounded text-[10px] font-semibold shrink-0" data-kor="초급~중급" data-eng="Beginner–Intermediate">초급~중급</span>
                     </div>
                 </div>
-
+ 
                 <!-- Course C -->
                 <div class="menu-card bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/40 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -240,7 +262,7 @@
                         <span class="px-2 py-0.5 bg-rose-950/60 text-rose-400 rounded text-[10px] font-semibold shrink-0" data-kor="중급~고급" data-eng="Intermediate–Advanced">중급~고급</span>
                     </div>
                 </div>
-
+ 
                 <!-- Course D -->
                 <div class="menu-card bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/40 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -258,7 +280,7 @@
                         <span class="px-2 py-0.5 bg-purple-950/60 text-purple-300 rounded text-[10px] font-semibold shrink-0" data-kor="매니아" data-eng="Expert">매니아</span>
                     </div>
                 </div>
-
+ 
                 <!-- Booker's Vertical Flight -->
                 <div class="menu-card bg-[#1a1412] border border-[#c5a059]/40 rounded-xl p-3.5 shadow-md">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -278,7 +300,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 3. SPEYSIDE ================= -->
         <section id="sec-speyside" class="menu-section">
             <div class="flex items-center justify-between mb-3 border-b border-[#2e221d] pb-2">
@@ -288,7 +310,7 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400" data-kor="40ml 기준" data-eng="Per 40ml">40ml 기준</span>
             </div>
-
+ 
             <div class="space-y-3" id="speyside-list">
                 <!-- Glenlivet 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -301,7 +323,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="상큼한 청사과와 화사한 꽃향, 부드러운 입문용" data-eng="Fresh apple and floral notes, very smooth">상큼한 청사과와 화사한 꽃향, 부드러운 입문용</p>
                 </div>
-
+ 
                 <!-- Glenlivet 15 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -313,7 +335,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="프랑스 오크가 주는 은은한 견과류와 가을 버터 풍미" data-eng="Subtle nuts and autumn butter from French oak">프랑스 오크가 주는 은은한 견과류와 가을 버터 풍미</p>
                 </div>
-
+ 
                 <!-- Glenlivet 18 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -325,7 +347,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="잘 익은 오렌지와 스파이시, 긴 여운의 숙성 밀도" data-eng="Ripe orange, warm spice, and long finish">잘 익은 오렌지와 스파이시, 긴 여운의 숙성 밀도</p>
                 </div>
-
+ 
                 <!-- Glen Grant 10 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -337,7 +359,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="가볍고 화사한 노란 과일향, 산뜻한 낮술 감성" data-eng="Bright yellow orchard fruits, refreshing daylight vibe">가볍고 화사한 노란 과일향, 산뜻한 낮술 감성</p>
                 </div>
-
+ 
                 <!-- Glen Grant 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -349,7 +371,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="달콤한 꿀과 잘 익은 배, 싱글몰트의 정석적인 과일 단맛" data-eng="Honey and ripe pear, textbook orchard sweetness">달콤한 꿀과 잘 익은 배, 싱글몰트의 정석적인 과일 단맛</p>
                 </div>
-
+ 
                 <!-- Glenfiddich 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -361,7 +383,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="전 세계가 사랑하는 산뜻한 청사과와 서양배" data-eng="Crisp green apple and fresh pear notes">전 세계가 사랑하는 산뜻한 청사과와 서양배</p>
                 </div>
-
+ 
                 <!-- Glenfiddich 15 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -373,7 +395,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="솔레라 방식으로 완성한 꿀과 농축된 서양배" data-eng="Solera-aged honey and rich pear">솔레라 방식으로 완성한 꿀과 농축된 서양배</p>
                 </div>
-
+ 
                 <!-- GlenAllachie 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -385,7 +407,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="빌리 워커의 진한 셰리 와인과 달콤한 초콜릿" data-eng="Rich sherry wine and chocolate by Billy Walker">빌리 워커의 진한 셰리 와인과 달콤한 초콜릿</p>
                 </div>
-
+ 
                 <!-- GlenAllachie 15 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -397,7 +419,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="버터스카치와 무화과, 눅진하고 달달한 셰리의 정수" data-eng="Butterscotch and dark fig, peak of sticky sherry">버터스카치와 무화과, 눅진하고 달달한 셰리의 정수</p>
                 </div>
-
+ 
                 <!-- GlenAllachie 10 CS -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -409,7 +431,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="무가수 원액의 폭발적 흑설탕과 카카오 펀치" data-eng="Uncut CS punch with dark sugar and cacao">무가수 원액의 폭발적 흑설탕과 카카오 펀치</p>
                 </div>
-
+ 
                 <!-- Macallan Double -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -421,7 +443,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="우디함 뒤에 깔리는 달콤하고 고소한 바닐라" data-eng="Sweet vanilla balance from sherry & American oak">우디함 뒤에 깔리는 달콤하고 고소한 바닐라</p>
                 </div>
-
+ 
                 <!-- Macallan Sherry -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -433,7 +455,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="말린 건포도와 시나몬, 독보적인 정통 셰리 풍미" data-eng="Dried raisins and cinnamon, classic iconic sherry">말린 건포도와 시나몬, 독보적인 정통 셰리 풍미</p>
                 </div>
-
+ 
                 <!-- Balvenie Doublewood -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -445,7 +467,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="은은한 꿀향과 부드러운 오크 바닐라 밸런스" data-eng="Honey and soft oak vanilla, smooth and gentle">은은한 꿀향과 부드러운 오크 바닐라 밸런스</p>
                 </div>
-
+ 
                 <!-- Balvenie Single Barrel -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -457,7 +479,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="단 하나의 오크통에서 뽑아낸 선명하고 진한 꿀과 배" data-eng="Intense honey and pear from single oak cask">단 하나의 오크통에서 뽑아낸 선명하고 진한 꿀과 배</p>
                 </div>
-
+ 
                 <!-- BenRiach Single Cask -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -472,7 +494,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 4. HIGHLANDS & ISLANDS ================= -->
         <section id="sec-highland" class="menu-section">
             <div class="flex items-center justify-between mb-3 border-b border-[#2e221d] pb-2">
@@ -482,7 +504,7 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400" data-kor="40ml 기준" data-eng="Per 40ml">40ml 기준</span>
             </div>
-
+ 
             <div class="space-y-3" id="highland-island-list">
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1">[ HIGHLANDS ]</div>
                 
@@ -497,7 +519,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="오렌지와 복숭아, 가장 화사하고 산뜻하며 섬세한 캐릭터" data-eng="Orange and peach, bright and delicate malt">오렌지와 복숭아, 가장 화사하고 산뜻하며 섬세한 캐릭터</p>
                 </div>
-
+ 
                 <!-- Glenmorangie Quinta Ruban -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -509,7 +531,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="포트 와인통이 선사하는 진한 다크 초콜릿과 박하향" data-eng="Dark chocolate and fresh mint from port cask">포트 와인통이 선사하는 진한 다크 초콜릿과 박하향</p>
                 </div>
-
+ 
                 <!-- Glenmorangie Signet -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -521,7 +543,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="초콜릿 몰트가 만들어내는 진한 에스프레소와 다크 초콜릿의 깊은 풍미" data-eng="Chocolate malt-driven espresso and dark chocolate richness">초콜릿 몰트가 만들어내는 진한 에스프레소와 다크 초콜릿의 깊은 풍미</p>
                 </div>
-
+ 
                 <!-- GlenDronach 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -533,7 +555,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="정통 셰리의 대명사, 묵직하고 쌉싸름한 오크와 건자두" data-eng="Dry sherry classic with rich plum and woody notes">정통 셰리의 대명사, 묵직하고 쌉싸름한 오크와 건자두</p>
                 </div>
-
+ 
                 <!-- Edradour 10 (Story Highlight) -->
                 <div class="menu-item bg-[#1a1412] border border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -546,7 +568,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="다락방 같은 쿰쿰하고 눅진한 올드스쿨 셰리 매력의 정점" data-eng="Rustic & sticky old-school rich sherry peak">다락방 같은 쿰쿰하고 눅진한 올드스쿨 셰리 매력의 정점</p>
                 </div>
-
+ 
                 <!-- Glen Garioch 15 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -558,7 +580,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="53.7도의 묵직한 셰리 타격감, 말린 무화과, 가죽향 그리고 계피" data-eng="Powerful 53.7% sherry kick, dried figs, leather and cinamon">53.7도의 묵직한 셰리 타격감, 말린 무화과와 가죽향</p>
                 </div>
-
+ 
                 <!-- Dalmore 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -570,7 +592,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="오렌지 껍질과 진한 카카오, 쌉쌀하고 차분한 맛" data-eng="Citrus orange peel and dark cacao, stylish">오렌지 껍질과 진한 카카오, 쌉쌀하고 차분한 맛</p>
                 </div>
-
+ 
                 <!-- Signatory Royal Brackla 13 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -583,7 +605,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="숨겨진 셰리 명가, 진하고 우아한 셰리 오크 캐릭터" data-eng="Cask strength IB, rich sherry oak & elegance">독립 병입 57.1% 원액, 진하고 우아한 셰리 오크 캐릭터</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ ISLANDS ]</div>
                 <!-- Talisker 10 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -596,7 +618,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="바다 안개와 짭조름한 짠맛, 뒤따라오는 매콤한 흑후추" data-eng="Sea fog, salty brine, and spicy black pepper twist">바다 안개와 짭조름한 짠맛, 뒤따라오는 매콤한 흑후추</p>
                 </div>
-
+ 
                 <!-- Highland Park 12 (Heather Honey Highlight) -->
                 <div class="menu-item bg-[#1a1412] border border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -608,11 +630,11 @@
                     </div>
                     <p class="text-xs text-zinc-200 font-medium leading-relaxed break-keep" data-kor="오크니 섬의 달콤한 <span class='text-[#dfbe7e] font-bold'>헤더 꿀</span> 향 뒤에 살며시 숨은 은은한 피트 훈연" data-eng="Orkney <span class='text-[#dfbe7e] font-bold'>heather honey</span> sweetness with gentle smoke">오크니 섬의 달콤한 <span class='text-[#dfbe7e] font-bold'>헤더 꿀</span> 향 뒤에 살며시 숨은 은은한 피트 훈연</p>
                 </div>
-
+ 
                 <!-- Highland Park Seoul -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
-                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="하이랜드 파크 서울 에디션 3 (30ml) (59.6%)" data-eng="Highland Park Seoul Edition 3 (30ml) (59.6%)">하이랜드 파크 서울 에디션 3 (30ml) (58.7%)</span>
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="하이랜드 파크 서울 에디션 3 (30ml) (59.6%)" data-eng="Highland Park Seoul Edition 3 (30ml) (59.6%)">하이랜드 파크 서울 에디션 3 (30ml) (59.6%)</span>
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">7.0</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
@@ -621,7 +643,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="<span class='text-[#dfbe7e] font-bold'>하이랜드 파크의 마지막 국가 에디션, 19년숙성 CS, 짙은 망고향</span>" data-eng="The final Seoul Edition from Highland Park: 19yo cask strength, with rich notes of mango.">19년 한정판, 헤더 꿀과 복합적인 시나몬 스파이스, 명품 훈연</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ LOWLANDS ]</div>
                 <!-- Signatory Auchentoshan 13 Amontillado -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -635,7 +657,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="로우랜드 특유의 가볍고 부드러운 질감에 아몬티야도 캐스크의 은은한 너트향과 드라이함" data-eng="Light Lowland malt finished with nutty, dry amontillado sherry">로우랜드 특유의 가볍고 부드러운 질감에 아몬티야도 캐스크의 은은한 너트향과 드라이함</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ CAMPBELTOWN ]</div>
                 <!-- Glen Scotia 7 Campbeltown Malt Festival 2026 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -650,7 +672,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 5. ISLAY (PEAT) ================= -->
         <section id="sec-islay" class="menu-section">
             <div class="flex items-center justify-between mb-3 border-b border-[#2e221d] pb-2">
@@ -660,7 +682,7 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400" data-kor="40ml 기준" data-eng="Per 40ml">40ml 기준</span>
             </div>
-
+ 
             <div class="space-y-3" id="islay-list">
                 <!-- Ardbeg 5 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -673,7 +695,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="거칠고 자극적인 생가죽 향, 불타는 숯불 장작 구이 감성" data-eng="Wild, raw leather and smoky BBQ peat explosion">거칠고 자극적인 생가죽 향, 불타는 숯불 장작 구이 감성</p>
                 </div>
-
+ 
                 <!-- Ardbeg 10 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -685,7 +707,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="산뜻한 레몬라임 시트러스와 은은하게 어우러진 모닥불 피트" data-eng="Crisp lemon-lime citrus wrapped in campfire peat">산뜻한 레몬라임 시트러스와 은은하게 어우러진 모닥불 피트</p>
                 </div>
-
+ 
                 <!-- Ardbeg Uigeadail -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -697,7 +719,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="셰리의 눅진한 단맛과 화산재 같은 묵직한 훈연향의 조화" data-eng="Rich sherry sweetness meeting heavy peat smoke">셰리의 눅진한 단맛과 화산재 같은 묵직한 훈연향의 조화</p>
                 </div>
-
+ 
                 <!-- Ardbeg Corry -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -709,7 +731,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="아일라의 바다를 농축한 매콤한 흑후추와 소용돌이치는 화약향" data-eng="Swirling hot black pepper and deep Islay maritime smoke">아일라의 바다를 농축한 매콤한 흑후추와 소용돌이치는 화약향</p>
                 </div>
-
+ 
                 <!-- Laphroaig 10 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -721,7 +743,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="정로환 소독약과 해초, 재 향이 선명한 정석적인 호불호 깡패" data-eng="Medicinal iodine antiseptic, seaweed, and heavy peat ash">정로환 소독약과 해초, 재 향이 선명한 정석적인 호불호 깡패</p>
                 </div>
-
+ 
                 <!-- Laphroaig 10 Sherry Cask -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -733,11 +755,11 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리" data-eng="Medicinal peat smoke intertwined with rich sherry sweetness">정통 피트 소독약에 덮여오는 달콤하고 묵직한 건포도 셰리</p>
                 </div>
-
+ 
                 <!-- Laphroaig 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
-                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="라프로익 12년" data-eng="Laphroaig 12 YO">라프로익 12년</span>
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="라프로익 12년 (46%)" data-eng="Laphroaig 12 YO (46%)">라프로익 12년 (46%)</span>
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.0</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
@@ -745,11 +767,11 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="10년보다 한층 더 깊어진 피트와 짭짤한 바다 내음의 균형감" data-eng="Deeper peat and briny balance than the 10 YO">10년보다 한층 더 깊어진 피트와 짭짤한 바다 내음의 균형감</p>
                 </div>
-
+ 
                 <!-- Laphroaig 15 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
-                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="라프로익 15년" data-eng="Laphroaig 15 YO">라프로익 15년</span>
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="라프로익 15년 (46%)" data-eng="Laphroaig 15 YO (46%)">라프로익 15년 (46%)</span>
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.2</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
@@ -758,7 +780,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="오렌지 제스트와 자몽, 긴 숙성이 주는 풍성하고 둥근 스모크 피니시" data-eng="Orange zest and grapefruit, a fuller rounded smoky finish">오렌지 제스트와 자몽, 긴 숙성이 주는 풍성하고 둥근 스모크 피니시</p>
                 </div>
-
+ 
                 <!-- Laphroaig 10 CS Batch 16 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -770,7 +792,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="물 타지 않은 58.5% 원액, 압도적인 고도수 피트 펀치" data-eng="Uncut unfiltered cask strength peat punch, Batch 16">물 타지 않은 58.5% 원액, 압도적인 고도수 피트 펀치</p>
                 </div>
-
+ 
                 <!-- Laphroaig 10 CS Batch 17 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -782,7 +804,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="강렬한 해초 소독약과 오크 오일의 깊고 긴 피니시" data-eng="Intense medicinal iodine and deep oily finish, Batch 17">강렬한 해초 소독약과 오크 오일의 깊고 긴 피니시</p>
                 </div>
-
+ 
                 <!-- Lagavulin 16 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -794,7 +816,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="피트의 왕, 차분하고 우아한 낙엽 탄 연기와 고급 바닐라" data-eng="Calm, elegant autumn leaf smoke and deep sweetness">피트의 왕, 차분하고 우아한 낙엽 탄 연기와 고급 바닐라</p>
                 </div>
-
+ 
                 <!-- Bowmore 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -806,7 +828,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="부드럽고 가벼운 피트향 뒤에 피어나는 화사한 과일 단맛" data-eng="Gentle peat holding hands with bright fruity sweetness">부드럽고 가벼운 피트향 뒤에 피어나는 화사한 과일 단맛</p>
                 </div>
-
+ 
                 <!-- Caol Ila 12 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -818,7 +840,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="맑고 깨끗한 바닷바람, 가벼운 시트러스와 산뜻한 연기" data-eng="Clean, refreshing sea breeze & sweet citrusy peat">맑고 깨끗한 바닷바람, 가벼운 시트러스와 산뜻한 연기</p>
                 </div>
-
+ 
                 <!-- Signatory Caol Ila 11 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -831,7 +853,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="독립 병입 57.1% 원액, 강렬한 피트 펀치와 시트러스" data-eng="Cask strength IB, sea salt and citrus peat punch">독립 병입 57.1% 원액, 강렬한 피트 펀치와 시트러스</p>
                 </div>
-
+ 
                 <!-- Signatory Caol Ila 2016 10 UCF -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -844,7 +866,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="논칠필터링으로 살린 오일리한 질감, 맑은 아일라 피트와 시트러스" data-eng="Unfiltered oily texture with clean Islay peat and citrus">논칠필터링으로 살린 오일리한 질감, 맑은 아일라 피트와 시트러스</p>
                 </div>
-
+ 
                 <!-- Octomore 16.1 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -858,7 +880,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 6. WORLD & BLENDED ================= -->
         <section id="sec-world" class="menu-section">
             <div class="flex items-center justify-between mb-3 border-b border-[#2e221d] pb-2">
@@ -868,7 +890,7 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400" data-kor="기준 용량 확인" data-eng="Check pour size">기준 용량 확인</span>
             </div>
-
+ 
             <div class="space-y-3" id="world-blended-list">
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1">[ TAIWAN MALT - KAVALAN ]</div>
                 <!-- Kavalan Distillery Edition -->
@@ -882,7 +904,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="망고·코코넛 등 아열대 과일 향과 화려하고 진한 바닐라 단맛" data-eng="Tropical fruits, coconut, and vivid vanilla oak">망고·코코넛 등 아열대 과일 향과 화려하고 진한 바닐라 단맛</p>
                 </div>
-
+ 
                 <!-- Kavalan Solist Bourbon -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -894,7 +916,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="물 타지 않은 고도수 원액, 바닐라와 아카시아 꿀의 묵직한 응축" data-eng="Rich vanilla and butterscotch at cask strength">물 타지 않은 고도수 원액, 바닐라와 아카시아 꿀의 묵직한 응축</p>
                 </div>
-
+ 
                 <!-- Kavalan Solist Port -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -906,7 +928,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="붉은 포트 와인의 진득한 달콤함, 말린 건포도와 무화과 잼 그리고 다크 초콜릿" data-eng="Sticky ruby wine, raisins, and rich jammy plum and dark chocolate">붉은 포트 와인의 진득한 달콤함, 말린 건포도와 무화과 잼</p>
                 </div>
-
+ 
                 <!-- Kavalan Solist Sherry -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -918,7 +940,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="셰리의 눅진한 베리류 터치와 에스프레소, 무거운 카카오 잔향" data-eng="Chocolate, espresso, and dark plum synergy">셰리의 눅진한 베리류 터치와 에스프레소, 무거운 카카오 잔향</p>
                 </div>
-
+ 
                 <!-- Kavalan Solist Vinho -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -930,7 +952,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="바베큐 구이의 나무 향 뒤에 쏟아지는 화사한 멜론과 과일 단맛" data-eng="Sweet melon, vanilla, toasted wood, and wine notes">바베큐 구이의 나무 향 뒤에 쏟아지는 화사한 멜론과 과일 단맛</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ KOREAN SPIRITS & WHISKY ]</div>
                 <!-- Hwayo XP -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -943,7 +965,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="최고급 화요 원액을 오크 숙성, a.k.a. 쌀베니" data-eng="Hwayo rice spirit aged in oak, smooth vanilla and rice. a.k.a. Rice Balvenie">최고급 화요 원액을 오크 숙성, 포근하고 은은한 쌀과 바닐라</p>
                 </div>
-
+ 
                 <!-- Ki One CS -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -951,11 +973,11 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">2.5</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="퍼스트필 버번 CS" data-eng="1st Fill Bourbon CS">퍼스트필 버번 CS</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="퍼스트필 버번 CS" data-eng="1st Fill Bourbon CS">PX 셰리 쿼터 CS</span>
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="페일 에일 몰트 + 퍼스트필 버번 CS" data-eng="Korea's first single malt distillery's limited bottle">한국 최초 싱글몰트 증류소의 화끈한 PX 셰리 타격감과 단맛</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ BLENDED ]</div>
                 <!-- Monkey Shoulder -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -968,7 +990,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="가장 캐주얼하고 부담 없는 고소한 보리와 오렌지 바닐라" data-eng="Approachable blended malt with smooth vanilla notes">가장 캐주얼하고 부담 없는 고소한 보리와 오렌지 바닐라</p>
                 </div>
-
+ 
                 <!-- Maltman 25 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -980,7 +1002,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="맥캘란 25년을 이 가격에...?" data-eng="Ultimate smoothness and calm woody depth aged 25y">오랜 세월 독병 숙성이 주는 극상의 부드러움과 우디한 중후함</p>
                 </div>
-
+ 
                 <!-- Suntory Kakubin -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -992,7 +1014,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="얼린 산토리 드셔보셨나요?" data-eng="Super chilled pour, absolute king of crisp highballs">뼛속까지 차가운 동굴식 특제 보틀 푸어링, 하이볼 베이스 최강자</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ FRANCE - MICHEL COUVREUR ]</div>
                 <!-- Michel Couvreur Overaged Malt Whisky -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
@@ -1005,7 +1027,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="원액 : 스코틀랜드, 숙성 : 프랑스 부르고뉴, 오크통 : 스페인 셰리 3개국 합작" data-eng="Old malts re-matured in Burgundy sherry casks, rich deep sweetness">여러 올드 위스키를 블렌딩해 부르고뉴 셀러의 셰리 캐스크에서 추가 숙성한 진하고 깊은 단맛</p>
                 </div>
-
+ 
                 <!-- Michel Couvreur Intravagan'za -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1020,7 +1042,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 7. BOURBON & SPIRITS ================= -->
         <section id="sec-bourbon" class="menu-section">
             <div class="flex items-center justify-between mb-3 border-b border-[#2e221d] pb-2">
@@ -1030,7 +1052,7 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400" data-kor="40ml 기준" data-eng="Per 40ml">40ml 기준</span>
             </div>
-
+ 
             <div class="space-y-3" id="bourbon-etc-list">
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1">[ AMERICAN BOURBON ]</div>
                 <!-- Weller 12 -->
@@ -1044,7 +1066,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="밀 버번의 정석(제주공항 특산품)" data-eng="Wheated bourbon, elegant sweet butterscotch vanilla">밀을 사용한 웰티드 버번, 타격감 대신 실크처럼 부드러운 바닐라</p>
                 </div>
-
+ 
                 <!-- Maker's Mark -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1056,7 +1078,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석" data-eng="Wheated bourbon with smooth sweet finish">부드러운 목 넘김과 가볍고 화사한 꿀, 옥수수 단맛의 정석</p>
                 </div>
-
+ 
                 <!-- Buffalo Trace -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1068,7 +1090,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서" data-eng="Textbook caramel and vanilla, standard of bourbon">캐러멜과 바닐라 풍미의 올바른 정석, 아메리칸 버번의 표준 교과서</p>
                 </div>
-
+ 
                 <!-- Wild Turkey 101 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1080,11 +1102,11 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥" data-eng="Bold 50.5% kick with toasted corn and nutty richness">50.5도 버번의 묵직한 가슴 타격감, 구운 견과류의 고소하고 매콤한 킥</p>
                 </div>
-
+ 
                 <!-- Wild Turkey Rare Breed -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
-                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="와일드 터키 레어브리드" data-eng="Wild Turkey Rare Breed">와일드 터키 레어브리드</span>
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="와일드 터키 레어브리드 (58.4%)" data-eng="Wild Turkey Rare Breed (58.4%)">와일드 터키 레어브리드 (58.4%)</span>
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.6</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
@@ -1092,7 +1114,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="10만원 미만 버번 대장" data-eng="The King of Bourbons Under 100,000 Won">무가수 배럴 프루프의 진한 캐러멜과 오크, 길게 이어지는 스파이시 피니시</p>
                 </div>
-
+ 
                 <!-- Maker's Mark CS -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1104,19 +1126,19 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="메이커스 마크의 고도수 버전" data-eng="Uncut wheated bourbon, deep caramel sweetness">한결 더 강력해진 오리지널 CS, 눅진하고 무거운 단맛 극대화</p>
                 </div>
-
-                <!-- Sagamore Rye -->
+ 
+                <!-- Rittenhouse Rye -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
-                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="사가모어 스피릿 시그니처 라이 (41.5%)" data-eng="Sagamore Spirit Signature Rye (41.5%)">사가모어 스피릿 시그니처 라이 (41.5%)</span>
+                        <span class="whisky-link text-sm font-bold text-white hover:text-[#dfbe7e] leading-snug" data-kor="리튼하우스 라이 (50%)" data-eng="Rittenhouse Rye (50%)">리튼하우스 라이 (50%)</span>
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">1.7</span>
                     </div>
                     <div class="flex flex-wrap items-center gap-1.5 mb-1.5">
-                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="라이 매쉬빌 오크" data-eng="Rye Mash Bill Oak">라이 매쉬빌 오크</span>
+                        <span class="cask-badge bg-[#2a1d17] text-[#dfbe7e] border border-[#4a3428]" data-kor="보틀드 인 본드 100 프루프" data-eng="Bottled-in-Bond 100 Proof">보틀드 인 본드 100 프루프</span>
                     </div>
-                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛" data-eng="Bright citrus, spicy mint, and herbal rye grass">호밀 베이스의 산뜻한 풀 내음, 알싸한 민트 허브와 깔끔한 끝 맛</p>
+                    <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="건과일과 토피, 시나몬과 육두구의 알싸함, 메이플처럼 길게 남는 스파이시 피니시" data-eng="Dried fruit and toffee, cinnamon and nutmeg spice, lingering maple-like finish">건과일과 토피, 시나몬과 육두구의 알싸함, 메이플처럼 길게 남는 스파이시 피니시</p>
                 </div>
-
+ 
                 <!-- Knob Creek 9 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1128,7 +1150,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="거친 참나무 숯 향, 묵직하고 마초적인 다크 캐러멜" data-eng="Robust oak char, rich leather, dark maple notes">거친 참나무 숯 향, 묵직하고 마초적인 다크 캐러멜</p>
                 </div>
-
+ 
                 <!-- Russell's Reserve SB -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1140,7 +1162,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="버번 마니아들의 영원한 원픽, 시나몬이 섞인 진한 고도수 바닐라" data-eng="The eternal favorite, rich proof vanilla & cinnamon">버번 마니아들의 영원한 원픽, 시나몬이 섞인 진한 고도수 바닐라</p>
                 </div>
-
+ 
                 <!-- Booker's 2025 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1152,7 +1174,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향" data-eng="Violent 63% punch followed by sweet cacao caramel">63.2도의 폭력적인 타격감 뒤에 피어오르는 달콤한 카카오 단향</p>
                 </div>
-
+ 
                 <!-- Booker's 2026 -->
                 <div class="menu-item bg-[#1a1412] border border-[#2e221d] hover:border-[#c5a059]/30 rounded-xl p-3.5 transition-all">
                     <div class="flex items-start justify-between gap-2 mb-1.5">
@@ -1164,7 +1186,7 @@
                     </div>
                     <p class="text-xs text-zinc-300 font-normal leading-relaxed break-keep" data-kor="물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향" data-eng="Uncut cask strength bourbon with deep vanilla oak">물 타지 않은 강력한 원액, 깊고 진한 오크 바닐라 잔향</p>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ GIN ]</div>
                 <div class="grid grid-cols-2 gap-2.5">
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3">
@@ -1175,7 +1197,7 @@
                         <p class="text-[11px] text-zinc-400 break-keep" data-kor="탄산 없이 그대로, 신선한 시트러스 제스트의 향을 온전히" data-eng="Neat pour, pure fresh citrus zest aroma">탄산 없이 그대로, 신선한 시트러스 제스트의 향을 온전히</p>
                     </div>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ TEQUILA ]</div>
                 <p class="text-xs text-zinc-400 mb-3 font-gowun" data-kor="5잔 주문시 1잔 서비스!(교차가능)" data-eng="Buy 5, Get 6">
                 5잔 주문시 1잔 서비스!(교차가능)
@@ -1196,7 +1218,7 @@
                         <p class="text-[11px] text-zinc-400 break-keep" data-kor="레몬즙이랑 마시면 핵꿀맛" data-eng="Light, friendly gold tequila">레몬즙이랑 마시면 핵꿀맛</p>
                     </div>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ COGNAC & BRANDY ]</div>
                 <div class="space-y-2">
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3 flex items-start justify-between gap-2">
@@ -1221,7 +1243,7 @@
                         <span class="text-sm font-bold text-[#dfbe7e] shrink-0 ml-2">3.5</span>
                     </div>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ BEER ]</div>
                 <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3 flex items-start justify-between gap-2">
                     <div>
@@ -1232,7 +1254,7 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- ================= 8. CLASSIC COCKTAILS ================= -->
         <section id="sec-cocktail-classic" class="menu-section">
             <div class="flex items-center justify-between mb-2 border-b border-[#2e221d] pb-2">
@@ -1244,7 +1266,7 @@
             <p class="text-xs text-zinc-400 mb-3 font-gowun" data-kor="메뉴판에 없는 클래식 칵테일이나 취향별 추천이 필요하시면 언제든 편하게 직원에게 말씀해 주세요." data-eng="Please ask our staff for any cocktail recommendations or drinks not listed.">
                 메뉴판에 없는 클래식 칵테일이나 취향별 추천이 필요하시면 언제든 편하게 직원에게 말씀해 주세요.
             </p>
-
+ 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-2.5" id="cocktail-list-1">
                 <!-- Gin & Tonics -->
                 <div class="col-span-full text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-1">[ GIN & TONICS ]</div>
@@ -1269,7 +1291,7 @@
                     </div>
                     <span class="text-sm font-bold text-[#dfbe7e]">1.8</span>
                 </div>
-
+ 
                 <!-- Spirit-Forward Classics -->
                 <div class="col-span-full text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ SPIRIT FORWARD ]</div>
                 <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3 flex items-center justify-between">
@@ -1351,7 +1373,7 @@
                 </h2>
                 <span class="text-[11px] text-zinc-400">Casual / Fun</span>
             </div>
-
+ 
             <div class="space-y-3" id="cocktail-list-2">
                 <!-- GOLDEN BELL -->
                 <div class="bg-gradient-to-r from-[#2a1e12] via-[#241a10] to-[#1a1412] border-2 border-[#c5a059] rounded-2xl p-4 shadow-xl">
@@ -1366,7 +1388,7 @@
                         현재 동굴 안의 모든 분들께 B-52 슈터 또는 하우스 위스키를 한 잔씩 선물합니다. (현재 매장 내 인원수 × 1.0만 원 계산)
                     </p>
                 </div>
-
+ 
                 <!-- SIGNATURES -->
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ DONGGUL SIGNATURES ]</div>
                 <div class="space-y-2">
@@ -1386,13 +1408,31 @@
                     </div>
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3.5 flex items-center justify-between">
                         <div>
+                            <span class="text-sm font-bold text-white" data-kor="Zecret" data-eng="Zecret">Zecret</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#dfbe7e]">1.6</span>
+                    </div>
+                    <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3.5 flex items-center justify-between">
+                        <div>
+                            <span class="text-sm font-bold text-white" data-kor="Z랄마" data-eng="Z랄마">Z랄마</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#dfbe7e]">1.8</span>
+                    </div>
+                    <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3.5 flex items-center justify-between">
+                        <div>
+                            <span class="text-sm font-bold text-white" data-kor="ldH" data-eng="ldH">ldH</span>
+                        </div>
+                        <span class="text-sm font-bold text-[#dfbe7e]">1.4</span>
+                    </div>
+                    <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-3.5 flex items-center justify-between">
+                        <div>
                             <span class="text-sm font-bold text-white" data-kor="와인 하이볼" data-eng="Wine Highball">와인 하이볼</span>
                             <p class="text-xs text-zinc-400 mt-0.5" data-kor="와인과 칵테일 모두 원할 때 제격인 하이볼" data-eng="Perfect when you want both wine and cocktail">와인과 칵테일 모두 원할 때 제격인 하이볼</p>
                         </div>
                         <span class="text-sm font-bold text-[#dfbe7e]">1.2</span>
                     </div>
                 </div>
-
+ 
                 <!-- CASUAL & SWEET COCKTAILS -->
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ CASUAL & SWEET ]</div>
                 <div class="grid grid-cols-2 gap-2">
@@ -1411,7 +1451,7 @@
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-2.5 flex items-center justify-between"><span class="text-xs font-semibold text-zinc-200" data-kor="말리부 오렌지" data-eng="Malibu Orange">말리부 오렌지</span><span class="text-xs font-bold text-[#dfbe7e]">1.4</span></div>
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-2.5 flex items-center justify-between"><span class="text-xs font-semibold text-zinc-200" data-kor="말리부 밀크" data-eng="Malibu Milk">말리부 밀크</span><span class="text-xs font-bold text-[#dfbe7e]">1.4</span></div>
                 </div>
-
+ 
                 <!-- WINE SECTION -->
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ WINE SELECTION ]</div>
                 <div class="space-y-2">
@@ -1437,7 +1477,7 @@
                         <span class="text-sm font-bold text-white">12.0</span>
                     </div>
                 </div>
-
+ 
                 <!-- FUN & SHOOTERS -->
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ FUN & HIGH PROOF ]</div>
                 <div class="space-y-2">
@@ -1456,13 +1496,13 @@
                         <span class="text-sm font-bold text-[#dfbe7e]">1.8</span>
                     </div>
                 </div>
-
+ 
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ SHOOTERS ]</div>
                 <div class="grid grid-cols-2 gap-2">
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-2.5 flex items-center justify-between"><span class="text-xs font-semibold text-zinc-200" data-kor="아이리쉬 슬래머 2잔" data-eng="Irish Slammer (2 shots)">아이리쉬 슬래머 2잔</span><span class="text-xs font-bold text-[#dfbe7e]">2.2</span></div>
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-2.5 flex items-center justify-between"><span class="text-xs font-semibold text-zinc-200" data-kor="아이리쉬 슬래머 4잔" data-eng="Irish Slammer (4 shots)">아이리쉬 슬래머 4잔</span><span class="text-xs font-bold text-[#dfbe7e]">4.0</span></div>
                 </div>
-
+ 
                 <!-- NON-ALCOHOL -->
                 <div class="text-[10px] font-bold text-[#c5a059] uppercase tracking-widest pl-1 pt-2">[ NON-ALCOHOLIC ]</div>
                 <div class="space-y-1.5">
@@ -1470,7 +1510,7 @@
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-2.5 flex items-center justify-between"><span class="text-xs text-zinc-200" data-kor="논알코올 오렌지 하이볼" data-eng="Non-Alc Orange Highball">논알코올 오렌지 하이볼</span><span class="text-xs font-bold text-[#dfbe7e]">1.2</span></div>
                     <div class="bg-[#1a1412] border border-[#2e221d] rounded-xl p-2.5 flex items-center justify-between"><span class="text-xs text-zinc-200" data-kor="논알코올 프레시 레몬 스쿼시" data-eng="Non-Alc Fresh Lemon Squash">논알코올 프레시 레몬 스쿼시</span><span class="text-xs font-bold text-[#dfbe7e]">1.2</span></div>   
                 </div>
-
+ 
                 <!-- OUTSIDE FOOD WELCOME NOTICE -->
                 <div class="pt-4 mt-4 border-t border-[#332620]">
                     <div class="bg-[#171210] border border-[#332620] rounded-xl p-4 text-center">
@@ -1482,13 +1522,13 @@
                 </div>
             </div>
         </section>
-
+ 
         <!-- Brand Footer -->
         <footer class="text-center pt-8 border-t border-[#2e221d] text-zinc-500">
             <p class="font-brand text-xs tracking-[0.3em] text-[#c5a059] font-bold mb-1">SEOUL, HUAMDONG ∙ DONGGUL</p>
         </footer>
     </main>
-
+ 
     <!-- Floating Top Scroll Button -->
     <button id="btn-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 p-3 rounded-full bg-[#c5a059] text-[#110d0b] shadow-2xl shadow-black/80 opacity-0 pointer-events-none transition-all duration-300 z-50 hover:bg-[#dfbe7e]">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1498,7 +1538,7 @@
     <script>
         let currentLang = 'ko';
         let currentTheme = 'dark'; // 'dark' (Cave Amber) or 'paper' (Antique Plaster)
-
+ 
         // Smooth scroll to section
         function scrollToSection(secId) {
             const el = document.getElementById(secId);
@@ -1506,23 +1546,23 @@
                 el.scrollIntoView({ behavior: 'smooth' });
             }
         }
-
+ 
         // Active section spy for category pills
         const sections = document.querySelectorAll('.menu-section');
         const navPills = document.querySelectorAll('.nav-pill');
         const categoryBar = document.getElementById('category-bar');
         const btnTop = document.getElementById('btn-top');
-
+ 
         window.addEventListener('scroll', () => {
             let current = '';
             const scrollPos = window.scrollY + 160;
-
+ 
             sections.forEach(section => {
                 if (scrollPos >= section.offsetTop) {
                     current = section.getAttribute('id');
                 }
             });
-
+ 
             navPills.forEach(pill => {
                 if (pill.getAttribute('data-sec') === current) {
                     pill.classList.add('bg-[#c5a059]', 'text-[#110d0b]');
@@ -1536,7 +1576,7 @@
                     pill.classList.add('bg-[#1c1513]', 'text-zinc-300');
                 }
             });
-
+ 
             // Show/hide floating top button
             if (window.scrollY > 400) {
                 btnTop.classList.remove('opacity-0', 'pointer-events-none');
@@ -1544,7 +1584,7 @@
                 btnTop.classList.add('opacity-0', 'pointer-events-none');
             }
         }, { passive: true });
-
+ 
         // Instant search filtering
         function handleSearch(query) {
             const q = query.trim().toLowerCase();
@@ -1555,7 +1595,7 @@
             } else {
                 clearBtn.classList.add('hidden');
             }
-
+ 
             document.querySelectorAll('.menu-item, .menu-card').forEach(item => {
                 const text = item.textContent.toLowerCase();
                 if (text.includes(q)) {
@@ -1565,20 +1605,20 @@
                 }
             });
         }
-
+ 
         function clearSearch() {
             const input = document.getElementById('menu-search');
             input.value = '';
             handleSearch('');
             input.focus();
         }
-
+ 
         // Language toggle
         function setLanguage(lang) {
             currentLang = lang;
             const btnKo = document.getElementById('btn-ko');
             const btnEn = document.getElementById('btn-en');
-
+ 
             if (lang === 'ko') {
                 btnKo.className = "px-2.5 py-1 text-[11px] font-bold rounded-full bg-[#c5a059] text-[#110d0b] transition-all";
                 btnEn.className = "px-2.5 py-1 text-[11px] font-bold rounded-full text-zinc-400 hover:text-white transition-all";
@@ -1586,7 +1626,7 @@
                 btnKo.className = "px-2.5 py-1 text-[11px] font-bold rounded-full text-zinc-400 hover:text-white transition-all";
                 btnEn.className = "px-2.5 py-1 text-[11px] font-bold rounded-full bg-[#c5a059] text-[#110d0b] transition-all";
             }
-
+ 
             const attr = lang === 'ko' ? 'data-kor' : 'data-eng';
             document.querySelectorAll(`[${attr}]`).forEach(el => {
                 const trans = el.getAttribute(attr);
@@ -1595,13 +1635,13 @@
                 }
             });
         }
-
+ 
         // Theme toggle: Dark Cave Amber vs Antique Ivory Paper
         function toggleTheme() {
             const body = document.body;
             const sunIcon = document.getElementById('icon-sun');
             const moonIcon = document.getElementById('icon-moon');
-
+ 
             if (currentTheme === 'dark') {
                 // Switch to Antique Paper Mode (High-contrast, zero-noise clean paper)
                 currentTheme = 'paper';
@@ -1617,7 +1657,7 @@
                 location.reload(); // Clean reset to default state
             }
         }
-
+ 
         // Initialize defaults
         window.addEventListener('DOMContentLoaded', () => {
             setLanguage('ko');
@@ -1625,3 +1665,5 @@
     </script>
 </body>
 </html>
+ 
+Claude가 응답을 완료했습니다
